@@ -18,3 +18,10 @@ challenge of implementing ITE on a quantum computer is that the ITE operator is 
   alt="Spread of entanglement">
   <figcaption>Spread of entanglement</figcaption>
 </figure>
+
+<figure>
+  <img
+  src="../images/publications/qite_simulations.png"
+  alt="simulation">
+  <figcaption>QPU simulations</figcaption>
+</figure>

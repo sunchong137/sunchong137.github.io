@@ -21,3 +21,9 @@ provides a numerical algorithm called finite-temperature density matrix embeddin
   alt="FT-DMET Algorithm">
   <figcaption>FT-DMET Algorithm</figcaption>
 </figure>
+<figure>
+  <img
+  src="../images/publications/2D_Hubbard.png"
+  alt="ft 2d hubbard">
+  <figcaption>Neel transition of 2D Hubbard model</figcaption>
+</figure>
