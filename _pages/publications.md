@@ -16,8 +16,8 @@ author_profile: true
 {% endfor %}
 
 
-## Other publications
+<!-- # Pre-prints
 
-[Waveflow: Enforcing boundary conditions in smooth normalizing flows with application to fermionic wave functions](https://arxiv.org/abs/2211.14839)
+[Waveflow: Enforcing boundary conditions in smooth normalizing flows with application to fermionic wave functions](https://arxiv.org/abs/2211.14839) -->
 
 [Monte-Carlo simulations of spin-crossover phenomena based on a vibronic Ising-like model with realistic parameters](https://pubs.rsc.org/en/content/articlelanding/2015/cp/c4cp05562d/unauth)
