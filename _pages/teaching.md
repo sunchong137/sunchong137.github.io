@@ -5,6 +5,10 @@ permalink: /teaching/
 author_profile: true
 ---
 
+师者，所以传道授业解惑也。-- 韩愈
+
+The role of a teacher is to transmit knowledge, impart skills, and dispel doubts. -- Han Yu
+
 ## Lecturer 
 ### CHM427/1480 Statistical Mechanics - co-taught with Prof. Dvira Segal
 
@@ -34,10 +38,10 @@ author_profile: true
 
 ## Mentees
 
-* <a href="https://www.linkedin.com/in/katerina-gratsea-a42793139/?originalSubdomain=es"> Alikaterini Gratsea </a>, *Zapata Computing Inc.*, 2022-2023
-* <a href="https://scholar.google.com/citations?user=z9fPNkAAAAAJ&hl=en"> Romi Lifshitz</a>, *University of Toronto*, 2021-2022
-* <a href="https://www.linkedin.com/in/shufayung/"> Shu Fay Ung</a> , *Caltech*, 2018-2019
-* <a href="https://www.linkedin.com/in/sherry-liang-736130125/"> Sherry Liang</a>, *Caltech WMW*, 2016-2017
+* <a href="https://www.linkedin.com/in/katerina-gratsea-a42793139/?originalSubdomain=es">Alikaterini Gratsea</a>, *Zapata Computing Inc.*, 2022-2023
+* <a href="https://scholar.google.com/citations?user=z9fPNkAAAAAJ&hl=en">Romi Lifshitz</a>, *University of Toronto*, 2021-2022
+* <a href="https://www.linkedin.com/in/shufayung/">Shu Fay Ung</a>, *Caltech*, 2018-2019
+* <a href="https://www.linkedin.com/in/sherry-liang-736130125/">Sherry Liang</a>, *Caltech WMW*, 2016-2017
 
 ## Awards
 
