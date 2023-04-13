@@ -17,6 +17,7 @@ author_profile: true
 ### CH125b TheElements of Quantum Chemistry - recitation instructor 
 
  - *Caltech*, 2017 - 2018 Winter
+ - <a href="https://sites.google.com/view/caltech-ch125b/home"> Course website </a>
 
 ### CH21b Physical Chemistry (B) - recitation instructor 
 
@@ -33,11 +34,11 @@ author_profile: true
 
 ## Mentees
 
-* <a href="https://www.linkedin.com/in/katerina-gratsea-a42793139/?originalSubdomain=es"> Alikaterini Gratsea </a>, *Zapata Computing Inc. 2022-2023*
-* <a href="https://scholar.google.com/citations?user=z9fPNkAAAAAJ&hl=en"> Romi Lifshitz</a>, *University of Toronto 2021-2022*
-* <a href="https://www.linkedin.com/in/shufayung/"> Shu Fay Ung</a> , *Caltech 2018-2019*
-* <a href="https://www.linkedin.com/in/sherry-liang-736130125/"> Sherry Liang</a>, *Caltech WMW 2016-2017*
+* <a href="https://www.linkedin.com/in/katerina-gratsea-a42793139/?originalSubdomain=es"> Alikaterini Gratsea </a>, *Zapata Computing Inc.*, 2022-2023
+* <a href="https://scholar.google.com/citations?user=z9fPNkAAAAAJ&hl=en"> Romi Lifshitz</a>, *University of Toronto*, 2021-2022
+* <a href="https://www.linkedin.com/in/shufayung/"> Shu Fay Ung</a> , *Caltech*, 2018-2019
+* <a href="https://www.linkedin.com/in/sherry-liang-736130125/"> Sherry Liang</a>, *Caltech WMW*, 2016-2017
 
 ## Awards
 
-* Teaching Award, *The Division of Chemistry and Chemical Engineering, Caltech, 2018*
+* Teaching Award, *The Division of Chemistry and Chemical Engineering, Caltech*, 2018
