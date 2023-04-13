@@ -16,16 +16,16 @@ author_profile: true
 ## Teaching assistant 
 ### CH125b TheElements of Quantum Chemistry - recitation instructor 
 
- - *Caltech*, 2017 - 2018 Winter
+ - *Caltech*, 2017-2018 Winter
  - <a href="https://sites.google.com/view/caltech-ch125b/home"> Course website </a>
 
 ### CH21b Physical Chemistry (B) - recitation instructor 
 
- - *Caltech*, 2016 - 2017 Winter
+ - *Caltech*, 2016-2017 Winter
 
 ### CH125a Quantum Mechanics (A) - recitation instructor 
 
- - *Caltech*, 2016 - 2017 Fall 
+ - *Caltech*, 2016-2017 Fall 
 
 ### Quantum Chemistry (graduate level)
 
