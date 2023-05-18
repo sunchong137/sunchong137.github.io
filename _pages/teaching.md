@@ -5,6 +5,7 @@ permalink: /teaching/
 author_profile: true
 ---
 
+
 师者，所以传道授业解惑也。-- 韩愈
 
 The role of a teacher is to transmit knowledge, impart skills, and dispel doubts. -- Han Yu
@@ -18,7 +19,7 @@ The role of a teacher is to transmit knowledge, impart skills, and dispel doubts
 
 
 ## Teaching assistant 
-### CH125b TheElements of Quantum Chemistry - recitation instructor 
+### CH125b The Elements of Quantum Chemistry - recitation instructor 
 
  - *Caltech*, 2017-2018 Winter
  - <a href="https://sites.google.com/view/caltech-ch125b/home"> Course website </a>
