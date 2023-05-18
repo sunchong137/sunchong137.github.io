@@ -10,7 +10,7 @@ redirect_from:
 
 Hi, I am Chong Sun [孙 (Sun1) 冲 (Chong1) in Chinese], a theoretical and computational
 chemist. I recieved my Ph.D. in 2020 from the Division of Chemistry and Chemical Engineering (CCE), California Institute of Technology, under the supervision of [Prof. Garnet Kin-Lic Chan](https://www.chan-lab.caltech.edu/). My dissertation is on [Finite-Temperature Simulations of Strongly Correlationed Systems](https://arxiv.org/abs/2302.14313). I then worked as a postdoctoral researcher with [Prof. Alan Aspuru-Guzik](https://www.matter.toronto.edu/) on novel numerical methods for electronic structures.
-Currently, I am working with [Prof. Gustavo Scuseria]http://scuseria.rice.edu/() to build my analytical skills for quantum chemistry. 
+Currently, I am working with [Prof. Gustavo Scuseria](http://scuseria.rice.edu/) to build my analytical skills for quantum chemistry. 
 
 <!-- title   -->
 ## Research Interest
