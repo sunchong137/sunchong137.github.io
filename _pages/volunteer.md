@@ -2,7 +2,7 @@
 layout: archive
 title: "Volunteer Activities"
 permalink: /volunteer/
-author_profile: true
+author_profile: false
 redirect_from:
   - /resume
 ---
