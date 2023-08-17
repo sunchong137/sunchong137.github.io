@@ -2,7 +2,7 @@
 layout: archive
 title: "Teaching & Mentoring Experiences"
 permalink: /teaching/
-author_profile: true
+author_profile: false
 ---
 
 
