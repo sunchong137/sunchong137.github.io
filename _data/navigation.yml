@@ -22,3 +22,5 @@ main:
     url: /volunteer/
   # - title: "Guide"
   #   url: /markdown/
+  - title: "Blog"
+    url: /posts/
