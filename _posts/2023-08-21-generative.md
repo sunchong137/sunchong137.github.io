@@ -7,9 +7,6 @@ tags:
   - Neural Networks
   - Machine Learning
   - Generative models
-hide:
-  - navigation
-  - toc
 ---
 This post gives a general introduction of popular generative models such as variational autoencoder (VAE) and diffusion models (DM).
 
