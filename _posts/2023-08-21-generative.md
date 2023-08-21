@@ -34,7 +34,7 @@ Some popular generative models are summarized in the following table and the bas
 
 <figure>
   <img
-  src="../images/publications/FT-DMET.png"
+  src="../images/posts/generative/overview.png"
   alt="Overview">
   <figcaption>Overview</figcaption>
 </figure>
@@ -174,9 +174,9 @@ $$
 \mathbb{E}_{q_{\phi}(\mathbf{z}|\mathbf{x})}\left[\log p_\theta(\mathbf{x}| \mathbf{z})\right] \approx \sum_{l=1}^L \log p_\theta(\mathbf{x}| {z}^{(l)})
 $$
 
-where the latents $\{z^{(l)}\}_{l=1}^L$ are sampled from $q_\phi(\mathbf{z}\|\mathbf{x})$ for *every* ${x}$ in the dataset. 
+where the latents $z^{(l)}_{l=1}^L$ are sampled from  $q_\phi(\mathbf{z}\|\mathbf{x})$ for *every* ${x}$ in the dataset. 
 
-If we directly generate a layer of $\mathbf{z}$ values from $q_\phi(\mathbf{z}\|\mathbf{x})$, then since $\{z^{(l)}\}_{l=1}^L$ are generated stochastically, the gradient with respect to $\phi$ cannot be evaluated easily. This can be resolved by **reparameterization**. The idea is to move the stochastic node out of the network, as follows (lecture slide from MIT)
+If we directly generate a layer of $\mathbf{z}$ values from $q_\phi(\mathbf{z}\|\mathbf{x})$, then since $\{z^{(l)}\}_{l=1}^L$ are generated stochastically, the gradient with respect to $\phi$ cannot be evaluated easily. This can be resolved by **reparameterization**. The idea is to move the stochastic node out of the network, as follows (lecture slide from MIT).
 
 <img src="figures/20230821/reparam.png" alt="Reparametrization" width="300"/>
 
@@ -258,11 +258,11 @@ $$
 
 where only $p(\mathbf{x}_T)$ has a fixed expression.
 
-Since $q(\mathbf{x}\|\mathbf{x}_{t-1})$ is pre-chosen, we only need to learn the backward conditions $p_{\theta}(\mathbf{x}_{t-1}\|\mathbf{x}_t)$, i.e., the parameters $\theta.$
+Since $q(\mathbf{x} \| \mathbf{x}_{t-1})$ is pre-chosen, we only need to learn the backward conditions $p_{\theta}(\mathbf{x}_{t-1} \| \mathbf{x}_t)$, i.e., the parameters $\theta$.
 
 ### Generating new data
 
-Once $p_{\theta}(\mathbf{x}_{t-1}\|\mathbf{x}_t)$ are learned, one can start from a standard Gaussian, and iteratively run the denoising transitions $p_{\theta}(\mathbf{x}_{t-1}\|\mathbf{x}_t)$ for $T$ steps to generate new data $\mathbf{x}_0$.
+Once $p_{\theta}(\mathbf{x}_{t-1} \| \mathbf{x}_t)$ are learned, one can start from a standard Gaussian, and iteratively run the denoising transitions $p_{\theta}(\mathbf{x}_{t-1} \| \mathbf{x}_t)$ for $T$ steps to generate new data $\mathbf{x}_0$.
 
 ### ELBO
 
@@ -275,8 +275,8 @@ $$
 
 The three terms correspond to
 
-- The reconstruction term $\mathbb{E}_{q(\mathbf{x}_1\|\mathbf{x}_0)}[\log p_{\theta}(\mathbf{x}_0\|\mathbf{x}_1)]$ can be approximated and optimized using Monte Carlo.
+- The reconstruction term $\mathbb{E}_{q(\mathbf{x}_1 \| \mathbf{x}_0)}[\log p_{\theta}(\mathbf{x}_0\|\mathbf{x}_1)]$ can be approximated and optimized using Monte Carlo.
 
-- The prior matching term $D_{\text{KL}}(q(\mathbf{x}_T\|\mathbf{x}_0)\|\| p(\mathbf{x}_T))$ is how close the final distribution to a standard Gaussian, and has no trainable parameters, so we can take is as a constant, say zero, and ignore it.
+- The prior matching term $D_{\text{KL}}(q(\mathbf{x}_T \| \mathbf{x}_0) \|\|  p(\mathbf{x}_T))$ is how close the final distribution to a standard Gaussian, and has no trainable parameters, so we can take is as a constant, say zero, and ignore it.
 
-- The denoising matching term $\sum_{t=2}^T \mathbb{E}_{q(\mathbf{x}_t\|\mathbf{x}_0)}[D_{\text{KL}}(q(\mathbf{x}_{t-1}\|\mathbf{x}_t,\mathbf{x}_0))\|\|p_{\theta}(\mathbf{x}_{t-1}\|\mathbf{x}_t)]$ , going in the reverse time direction. The ground truth denoising transition step is $q(\mathbf{x}_{t-1}\|\mathbf{x}_t, \mathbf{x}_0)$, and we train the parameters $\theta$ to learn $p_{\theta}(\mathbf{x}_{t-1}\|\mathbf{x}_t)$.
+- The denoising matching term $\sum_{t=2}^T \mathbb{E}_{q(\mathbf{x}_t \| \mathbf{x}_0)}[D_{\text{KL}}(q(\mathbf{x}_{t-1} \| \mathbf{x}_t,\mathbf{x}_0)) \|\| p_{\theta}(\mathbf{x}_{t-1} \| \mathbf{x}_t)]$ , going in the reverse time direction. The ground truth denoising transition step is $q(\mathbf{x}_{t-1} \| \mathbf{x}_t, \mathbf{x}_0)$, and we train the parameters $\theta$ to learn $p_{\theta}(\mathbf{x}_{t-1} \| \mathbf{x}_t)$.
