@@ -12,7 +12,11 @@ hide:
   - toc
 ---
 
-# Introduction to Generative Models
+1. [Introduction](#Introduction)
+2. [Variational Autoencoder (VAE)](#Variational Autoencoder (VAE))
+3. [Variational Diffusion Models (VDM)](#Variational Diffusion Models (VDM))
+
+# Introduction
 
 The **goal** of a generative model is to learn the true data distribution $p(\mathbf{x})$ given a sample $\mathbf{x}$ from this distribution.
 
@@ -27,7 +31,7 @@ Some popular generative models are summarized in the following table and the bas
 | Energy-based models |  | optimization |
 | Score-based models | https://arxiv.org/pdf/2208.11970.pdf | optimization |
 
-![Untitled](figures/20230821/Untitled.png)
+![Untitled](figures/20230821/overview.png)
 
 ## Philosophical discussion on the hierarchy of information
 
@@ -95,9 +99,9 @@ Therefore we figured out that the difference between the ELBO and the log likeli
 
 ***Variational*** comes from the ELBO is the lower bound of the log likelihood, so the method is variational. ***Autoencoder*** comes from a traditional autoencoder model, where input data is trained to predict itself after undergoing an intermediate bottlenecking representation step. The idea (left) and the network (right) of are shown as follows. The **bottleneck representation** is the red layer, i.e., the **latent data**, and it looks like the shape of a bottleneck.
 
-![Untitled](figures/20230821/Untitled%201.png)
+![Untitled](figures/20230821/vae.png)
 
-![Untitled](figures/20230821/Untitled%202.png)
+![Untitled](figures/20230821/vae2.png)
 
 The encoder is $q(\mathbf{z}|\mathbf{x})$, and the decoder is $p(\mathbf{x}|\mathbf{z})$.
 
@@ -169,7 +173,7 @@ where the latents $\{z^{(l)}\}_{l=1}^L$ are sampled from $q_\phi(\mathbf{z}|\mat
 
 If we directly generate a layer of $\mathbf{z}$ values from $q_\phi(\mathbf{z}|\mathbf{x})$, then since $\{z^{(l)}\}_{l=1}^L$ are generated stochastically, the gradient with respect to $\phi$ cannot be evaluated easily. This can be resolved by **reparameterization**. The idea is to move the stochastic node out of the network, as follows (lecture slide from MIT)
 
-![Untitled](figures/20230821/Untitled%203.png)
+![Untitled](figures/20230821/reparam.png)
 
 The reparameterization trick rewrites a random variable as *a deterministic function of a noise variable* (i.e. another random variable). For example, sampling from a normal distribution $x\sim \mathcal{N}(x;\mu, \sigma^2)$ with arbitrary $\mu$ and $\sigma$ can be derived from a standard normal distribution of an auxiliary **noise variable** $\epsilon \sim \mathcal{N}(\epsilon;0, 1)$  from
 
@@ -189,7 +193,7 @@ Next, we can generate new data $\mathbf{x}$ from $\mathbf{z}^{(l)}$ by the decod
 
 The algorithm is shown as follows (lecture slides from Stanford):
 
-![Untitled](figures/20230821/Untitled%204.png)
+![Untitled](figures/20230821/vae_alg.png)
 
 An example code of VAE is [here](https://github.com/pytorch/examples/blob/main/vae/main.py#L47-L73).
 
@@ -197,7 +201,7 @@ An example code of VAE is [here](https://github.com/pytorch/examples/blob/main/v
 
 The idea of Hierarchical VAE is straightforward: instead of one layer of latent variables, multiple layers of latent variables are used, as follows
 
-![Untitled](figures/20230821/Untitled%205.png)
+![Untitled](figures/20230821/hvae.png)
 
 The chain rule for Markovian HVAE is
 
@@ -221,7 +225,7 @@ VDM has the same structure as the Markovian Hierarchical VAE, with three constra
 
 The idea is to evolve the data to a pure Gaussian noise, and the information of the distribution of the data is encoded in the hyperparameters in each layer. This is a coarse-graining procedure, similar as tensor network contraction. Shown in the following figure:
 
-![Untitled](figures/20230821/Untitled%206.png)
+![Untitled](figures/20230821/vdm.png)
 
 ## The model
 
