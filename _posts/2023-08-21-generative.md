@@ -34,7 +34,7 @@ Some popular generative models are summarized in the following table and the bas
 
 <figure>
   <img
-  src="../images/posts/generative/overview.png"
+  src="../images/publications/FT-DMET.png"
   alt="Overview">
   <figcaption>Overview</figcaption>
 </figure>
@@ -80,9 +80,7 @@ $$
 \mathbb{E}_{q_{\phi}(\mathbf{z}\|\mathbf{x})}\left[\log \frac{p(\mathbf{x}, \mathbf{z})}{q_{\phi}(\mathbf{z}\|\mathbf{x})}\right] \leq \log p(\mathbf{x})
 $$
 
-where $q_{\phi}(\mathbf{z}\|\mathbf{x})$ is an approximation to $p(\mathbf{z}\|\mathbf{x})$ with tunable parameters $\phi$. 
-
-Next we prove that $\mathbb{E}_{q_{\phi}(\mathbf{z} \| \mathbf{x})} \left[\log \frac{p(\mathbf{x}, \mathbf{z})}{q_{\phi}(\mathbf{z} \| \mathbf{x})}\right]$ is indeed the lower bound of the log likelihood $\log p(\mathbf{x})$ from two perspectives: 
+where $q_{\phi}(\mathbf{z}\|\mathbf{x})$ is an approximation to $p(\mathbf{z}\|\mathbf{x})$ with tunable parameters $\phi$. Next we prove that the above equation is indeed the lower bound of the log likelihood $\log p(\mathbf{x})$ from two perspectives: 
 
 1) using [Jensen’s inequality](https://en.wikipedia.org/wiki/Jensen%27s_inequality) for convex and concave functions
 
@@ -141,7 +139,7 @@ Computing $D_{\mathrm{KL}}[q_{\phi}(\mathbf{z}\|\mathbf{x}) \|\| p_\theta(\mathb
 In order to maximize the ELBO, we want to maximize the **reconstruction term** and minimize the **prior matching term**. 
 
 $$
-\argmax_{\phi,\theta}\left(\mathbb{E}_{q_{\phi}(\mathbf{z}|\mathbf{x})}\left[\log p_\theta(\mathbf{x}| \mathbf{z})\right]  - D_{\mathrm{KL}}(q_\phi(\mathbf{z}|\mathbf{x})|| p(\mathbf{z}))\right)
+\max_{\phi,\theta}\left(\mathbb{E}_{q_{\phi}(\mathbf{z}|\mathbf{x})}\left[\log p_\theta(\mathbf{x}| \mathbf{z})\right]  - D_{\mathrm{KL}}(q_\phi(\mathbf{z}|\mathbf{x})|| p(\mathbf{z}))\right)
 $$
 
 ### The prior matching term
