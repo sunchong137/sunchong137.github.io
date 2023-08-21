@@ -32,8 +32,13 @@ Some popular generative models are summarized in the following table and the bas
 | Energy-based models |  | optimization |
 | Score-based models | [Paper](https://arxiv.org/pdf/2208.11970.pdf) | optimization |
 
+<figure>
+  <img
+  src="../images/posts/generative/overview.png"
+  alt="Overview">
+  <figcaption>FT-DMET Algorithm</figcaption>
+</figure>
 
-<img src="figures/20230821/overview.png" alt="Overview" width="300"/>
 
 ### Philosophical discussion on the hierarchy of information
 
@@ -43,7 +48,7 @@ In generative modeling, however, people try to learn lower-dimensional latent re
 
 We can view the data we observe $\mathbf{x}$ and the latent variable $\mathbf{z}$ as correlated vectors, and the joint distribution is $p(\mathbf{x}, \mathbf{z})$. We know the sample distribution of our data $\mathbf{x}$, and we want to learn its *true distribution $p(\mathbf{x})$* that describes best our data $\mathbf{x}$. 
 
-First we should notice there are two ways of deriving $*p(\mathbf{x})$* from $p(\mathbf{x}, \mathbf{z})$:
+First we should notice there are two ways of deriving $p(\mathbf{x})$ from $p(\mathbf{x}, \mathbf{z})$:
 
 - *Marginalizing out* the latent variable $\mathbf{z}$
 
