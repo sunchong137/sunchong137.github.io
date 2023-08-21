@@ -36,7 +36,7 @@ Some popular generative models are summarized in the following table and the bas
   <img
   src="../images/posts/generative/overview.png"
   alt="Overview">
-  <figcaption>FT-DMET Algorithm</figcaption>
+  <figcaption>Overview</figcaption>
 </figure>
 
 
@@ -82,7 +82,7 @@ $$
 
 where $q_{\phi}(\mathbf{z}\|\mathbf{x})$ is an approximation to $p(\mathbf{z}\|\mathbf{x})$ with tunable parameters $\phi$. 
 
-Next we prove that $\mathbb{E}_{q_{\phi}(\mathbf{z}\|\mathbf{x})}\left[\log \frac{p(\mathbf{x}, \mathbf{z})}{q_{\phi}(\mathbf{z}\|\mathbf{x})}\right]$ is indeed the lower bound of the log likelihood $\log p(\mathbf{x})$ from two perspectives: 
+Next we prove that $\mathbb{E}_{q_{\phi}(\mathbf{z} \| \mathbf{x})} \left[\log \frac{p(\mathbf{x}, \mathbf{z})}{q_{\phi}(\mathbf{z} \| \mathbf{x})}\right]$ is indeed the lower bound of the log likelihood $\log p(\mathbf{x})$ from two perspectives: 
 
 1) using [Jensen’s inequality](https://en.wikipedia.org/wiki/Jensen%27s_inequality) for convex and concave functions
 
