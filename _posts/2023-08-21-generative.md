@@ -239,7 +239,7 @@ $$
 q(\mathbf{x}_{1:T}|\mathbf{x}_0) = \prod_{t=1}^T q(\mathbf{x}_t|\mathbf{x}_{t-1})
 $$
 
-At time $t$, the distribution of $\mathbf{x}_t$ is the Gaussian around $\mathbf{x}_{t-1}$
+At time $t$, the distribution of $\mathbf{x}_t$ is the Gaussian around $\mathbf{x}_{t-1}$.
 
 $$
 q(\mathbf{x}_{t}|\mathbf{x}_{t-1}) = \mathcal{N}(\mathbf{x}_t;\sqrt{\alpha_t}\mathbf{x}_{t-1}, (1-\alpha_t)\mathbf{I})
@@ -272,8 +272,8 @@ $$
 
 The three terms correspond to
 
-- The reconstruction term $\mathbb{E}_{q(\mathbf{x}_1 \vert \mathbf{x}_0)}[\log p_{\theta}(\mathbf{x}_0\vert\mathbf{x}_1)]$ can be approximated and optimized using Monte Carlo.
+- The reconstruction term can be approximated and optimized using Monte Carlo.
 
-- The prior matching term $D_{\text{KL}}(q(\mathbf{x}_T \vert \mathbf{x}_0) \vert\vert  p(\mathbf{x}_T))$ is how close the final distribution to a standard Gaussian, and has no trainable parameters, so we can take is as a constant, say zero, and ignore it.
+- The prior matching term is how close the final distribution to a standard Gaussian, and has no trainable parameters, so we can take is as a constant, say zero, and ignore it.
 
-- The denoising matching term $\sum_{t=2}^T \mathbb{E}_{q(\mathbf{x}_t \vert \mathbf{x}_0)}[D_{\text{KL}}(q(\mathbf{x}_{t-1} \vert \mathbf{x}_t,\mathbf{x}_0)) \vert\vert p_{\theta}(\mathbf{x}_{t-1} \vert \mathbf{x}_t)]$ , going in the reverse time direction. The ground truth denoising transition step is $q(\mathbf{x}_{t-1} \vert \mathbf{x}_t, \mathbf{x}_0)$, and we train the parameters $\theta$ to learn $p_{\theta}(\mathbf{x}_{t-1} \vert \mathbf{x}_t)$.
+- The denoising matching term goes in the reverse time direction. The ground truth denoising transition step is $q(\mathbf{x}_{t-1} \vert \mathbf{x}_t, \mathbf{x}_0)$, and we train the parameters $\theta$ to learn $p_{\theta}(\mathbf{x}_{t-1} \vert \mathbf{x}_t)$.
