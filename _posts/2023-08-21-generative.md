@@ -63,7 +63,7 @@ Both approaches remove the information of $\mathbf{z}$.
 
 In the integration approach, the information is removed by the direction $\mathbf{z}\rightarrow \mathbf{x}$, i.e., for each $\mathbf{z}$ there is a distribution of $\mathbf{x}$, then summing up all $\mathbf{z}$ values will give the distribution of $\mathbf{x}$. 
 
-In the chain rule approach, the information is removed by the direction  $\mathbf{x}\rightarrow \mathbf{z}$. Similar to the chain rule of derivation, we view $\mathbf{z}$ as a function of $\mathbf{x}$ through $p(\mathbf{z}\|\mathbf{x})$ , and $p(\mathbf{x}, \mathbf{z})$ a function of $\mathbf{x}$ and $\mathbf{z}$, then dividing $p(\mathbf{x}, \mathbf{z})$ by $p(\mathbf{z}\|\mathbf{x})$ will remove the information of $\mathbf{z}$ and result in the distribution of $\mathbf{x}$. 
+In the chain rule approach, the information is removed by the direction  $\mathbf{x}\rightarrow \mathbf{z}$. Similar to the chain rule of derivation, we view $\mathbf{z}$ as a function of $\mathbf{x}$ through $p(\mathbf{z}\vert\mathbf{x})$ , and $p(\mathbf{x}, \mathbf{z})$ a function of $\mathbf{x}$ and $\mathbf{z}$, then dividing $p(\mathbf{x}, \mathbf{z})$ by $p(\mathbf{z}\vert\mathbf{x})$ will remove the information of $\mathbf{z}$ and result in the distribution of $\mathbf{x}$. 
 
 ## Evidence Lower Bound (ELBO)
 
@@ -74,15 +74,15 @@ In the **likelihood-based models**, we want to maximize the likelihood $p(\mathb
 We first give the expression of the ELBO, then prove that it is the lower bound of $\log p(\mathbf{x})$, which means ELBO is **variational**. The equation of ELBO is
 
 $$
-\mathbb{E}_{q_{\phi}(\mathbf{z}\|\mathbf{x})}\left[\log \frac{p(\mathbf{x}, \mathbf{z})}{q_{\phi}(\mathbf{z}\|\mathbf{x})}\right] \leq \log p(\mathbf{x})
+\mathbb{E}_{q_{\phi}(\mathbf{z}\vert\mathbf{x})}\left[\log \frac{p(\mathbf{x}, \mathbf{z})}{q_{\phi}(\mathbf{z}\vert\mathbf{x})}\right] \leq \log p(\mathbf{x})
 $$
 
-where $q_{\phi}(\mathbf{z}\|\mathbf{x})$ is an approximation to $p(\mathbf{z}\|\mathbf{x})$ with tunable parameters $\phi$. Next we prove that the above equation is indeed the lower bound of the log likelihood $\log p(\mathbf{x})$ from two perspectives: 
+where $q_{\phi}(\mathbf{z}\vert\mathbf{x})$ is an approximation to $p(\mathbf{z}\vert\mathbf{x})$ with tunable parameters $\phi$. Next we prove that the above equation is indeed the lower bound of the log likelihood $\log p(\mathbf{x})$ from two perspectives: 
 
 1) using [Jensen’s inequality](https://en.wikipedia.org/wiki/Jensen%27s_inequality) for convex and concave functions
 
 $$
-\log p(\mathbf{x}) = \log \int p(\mathbf{x}, \mathbf{z})\mathrm{d}\mathbf{z} = \log \int \frac{p(\mathbf{x}, \mathbf{z})q_{\phi}(\mathbf{z}|\mathbf{x})}{q_{\phi}(\mathbf{z}|\mathbf{x})}\mathrm{d}\mathbf{z} \\ = \log \mathbb{E}_{q_{\phi}(\mathbf{z}\|\mathbf{x})}\left[\frac{p(\mathbf{x}, \mathbf{z})}{q_{\phi}(\mathbf{z}|\mathbf{x})}\right] \geq \mathbb{E}_{q_{\phi}(\mathbf{z}|\mathbf{x})}\left[\log \frac{p(\mathbf{x}, \mathbf{z})}{q_{\phi}(\mathbf{z}\|\mathbf{x})}\right]
+\log p(\mathbf{x}) = \log \int p(\mathbf{x}, \mathbf{z})\mathrm{d}\mathbf{z} = \log \int \frac{p(\mathbf{x}, \mathbf{z})q_{\phi}(\mathbf{z}|\mathbf{x})}{q_{\phi}(\mathbf{z}|\mathbf{x})}\mathrm{d}\mathbf{z} \\ = \log \mathbb{E}_{q_{\phi}(\mathbf{z}\vert\mathbf{x})}\left[\frac{p(\mathbf{x}, \mathbf{z})}{q_{\phi}(\mathbf{z}|\mathbf{x})}\right] \geq \mathbb{E}_{q_{\phi}(\mathbf{z}|\mathbf{x})}\left[\log \frac{p(\mathbf{x}, \mathbf{z})}{q_{\phi}(\mathbf{z}\vert\mathbf{x})}\right]
 $$
 
 where the $\geq$ sign used Jensen’s inequality since $\log$ is a concave function.
@@ -90,12 +90,12 @@ where the $\geq$ sign used Jensen’s inequality since $\log$ is a concave funct
 2) we can actually figure out the difference between the ELBO and the true log likelihood by
 
 $$
-\log p(\mathbf{x}) = \log p(\mathbf{x}) \underbrace{\int q_{\phi}(\mathbf{z}\|\mathbf{x})}_{=1} = \int q_{\phi}(\mathbf{z}\|\mathbf{x})(\log p(\mathbf{x}))\mathrm{d}\mathbf{z} \\ =\mathbb{E}_{q_{\phi}(\mathbf{z}\|\mathbf{x})}[\log p(\mathbf{x})] = \mathbb{E}_{q_{\phi}(\mathbf{z}\|\mathbf{x})}\left[\log \frac{p(\mathbf{x}, \mathbf{z})}{p(\mathbf{z}|\mathbf{x})}\right]  = \mathbb{E}_{q_{\phi}(\mathbf{z}|\mathbf{x})}\left[\log \frac{p(\mathbf{x}, \mathbf{z})q_{\phi}(\mathbf{z}|\mathbf{x})}{p(\mathbf{z}|\mathbf{x})q_{\phi}(\mathbf{z}|\mathbf{x})}\right]\\ = \mathbb{E}_{q_{\phi}(\mathbf{z}|\mathbf{x})}\left[\log \frac{p(\mathbf{x}, \mathbf{z})}{q_{\phi}(\mathbf{z}|\mathbf{x})}\right] + \mathbb{E}_{q_{\phi}(\mathbf{z}|\mathbf{x})}\left[\log \frac{q_{\phi}(\mathbf{z}|\mathbf{x})}{p(\mathbf{z}|\mathbf{x})}\right]\\ = \mathrm{ELBO} + D_{\mathrm{KL}}(q_{\phi}(\mathbf{z}|\mathbf{x}) || p(\mathbf{z}|\mathbf{x})) \geq  \mathrm{ELBO}
+\log p(\mathbf{x}) = \log p(\mathbf{x}) \underbrace{\int q_{\phi}(\mathbf{z}\vert\mathbf{x})}_{=1} = \int q_{\phi}(\mathbf{z}\vert\mathbf{x})(\log p(\mathbf{x}))\mathrm{d}\mathbf{z} \\ =\mathbb{E}_{q_{\phi}(\mathbf{z}\vert\mathbf{x})}[\log p(\mathbf{x})] = \mathbb{E}_{q_{\phi}(\mathbf{z}\vert\mathbf{x})}\left[\log \frac{p(\mathbf{x}, \mathbf{z})}{p(\mathbf{z}|\mathbf{x})}\right]  = \mathbb{E}_{q_{\phi}(\mathbf{z}|\mathbf{x})}\left[\log \frac{p(\mathbf{x}, \mathbf{z})q_{\phi}(\mathbf{z}|\mathbf{x})}{p(\mathbf{z}|\mathbf{x})q_{\phi}(\mathbf{z}|\mathbf{x})}\right]\\ = \mathbb{E}_{q_{\phi}(\mathbf{z}|\mathbf{x})}\left[\log \frac{p(\mathbf{x}, \mathbf{z})}{q_{\phi}(\mathbf{z}|\mathbf{x})}\right] + \mathbb{E}_{q_{\phi}(\mathbf{z}|\mathbf{x})}\left[\log \frac{q_{\phi}(\mathbf{z}|\mathbf{x})}{p(\mathbf{z}|\mathbf{x})}\right]\\ = \mathrm{ELBO} + D_{\mathrm{KL}}(q_{\phi}(\mathbf{z}|\mathbf{x}) || p(\mathbf{z}|\mathbf{x})) \geq  \mathrm{ELBO}
 $$
 
-where $D_{\mathrm{KL}}(q_{\phi}(\mathbf{z}\|\mathbf{x}) \|\| p(\mathbf{z}\|\mathbf{x}))$ is the *Kullback-Leibler divergence (or KL divergence or **relative entropy**)* between $q_{\phi}(\mathbf{z}\|\mathbf{x})$ and $p(\mathbf{z}\|\mathbf{x})$, and is always $\geq 0$, due to the [*Gibbs inequality*](https://en.wikipedia.org/wiki/Gibbs%27_inequality): the entropy of a probability distribution $-q\log q$  is always greater than or equal to the cross entropy $-q\log p$.  
+where $D_{\mathrm{KL}}(q_{\phi}(\mathbf{z}\vert\mathbf{x}) \vert\vert p(\mathbf{z}\vert\mathbf{x}))$ is the *Kullback-Leibler divergence (or KL divergence or **relative entropy**)* between $q_{\phi}(\mathbf{z}\vert\mathbf{x})$ and $p(\mathbf{z}\vert\mathbf{x})$, and is always $\geq 0$, due to the [*Gibbs inequality*](https://en.wikipedia.org/wiki/Gibbs%27_inequality): the entropy of a probability distribution $-q\log q$  is always greater than or equal to the cross entropy $-q\log p$.  
 
-Therefore we figured out that the difference between the ELBO and the log likelihood is the KL-divergence of the conditional probability $p(\mathbf{z}\|\mathbf{x})$ and the approximated one $q_{\phi}(\mathbf{z}\|\mathbf{x})$.
+Therefore we figured out that the difference between the ELBO and the log likelihood is the KL-divergence of the conditional probability $p(\mathbf{z}\vert\mathbf{x})$ and the approximated one $q_{\phi}(\mathbf{z}\vert\mathbf{x})$.
 
 # Variational Autoencoder (VAE)
 
@@ -105,18 +105,18 @@ Therefore we figured out that the difference between the ELBO and the log likeli
 <img src="./figures/20230821/vae2.png" alt="VAE" width="300"/>
 
 
-The encoder is $q(\mathbf{z}\|\mathbf{x})$, and the decoder is $p(\mathbf{x}\|\mathbf{z})$.
+The encoder is $q(\mathbf{z}\vert\mathbf{x})$, and the decoder is $p(\mathbf{x}\vert\mathbf{z})$.
 
-Practically,  $p(\mathbf{x}\|\mathbf{z})$ is what we want to know (because then we can get $p(\mathbf{x})$ with chain rule; while $q(\mathbf{z}\|\mathbf{x})$ is intractable to calculate. Therefore, in the following, we assign parameters to them: $p(\mathbf{x})\rightarrow p_\theta(\mathbf{x})$, $q(\mathbf{z}\|\mathbf{x})\rightarrow q_\phi(\mathbf{z}\|\mathbf{x})$, and our goal is to optimize the parameters $\theta$ and $\phi$ in order to maximize the likelihood.
+Practically,  $p(\mathbf{x}\vert\mathbf{z})$ is what we want to know (because then we can get $p(\mathbf{x})$ with chain rule; while $q(\mathbf{z}\vert\mathbf{x})$ is intractable to calculate. Therefore, in the following, we assign parameters to them: $p(\mathbf{x})\rightarrow p_\theta(\mathbf{x})$, $q(\mathbf{z}\vert\mathbf{x})\rightarrow q_\phi(\mathbf{z}\vert\mathbf{x})$, and our goal is to optimize the parameters $\theta$ and $\phi$ in order to maximize the likelihood.
 
 ### Rewriting the ELBO
 
-Next we want to rewrite the expression of $p_\theta(\mathbf{x})$ to explicitly contain the encoder $q_\phi(\mathbf{z}\|\mathbf{x})$ and the decoder $p_\theta(\mathbf{x}\|\mathbf{z})$. 
+Next we want to rewrite the expression of $p_\theta(\mathbf{x})$ to explicitly contain the encoder $q_\phi(\mathbf{z}\vert\mathbf{x})$ and the decoder $p_\theta(\mathbf{x}\vert\mathbf{z})$. 
 
 Following the second expression of the ELBO, we have
 
 $$
-p_\theta(\mathbf{x}) = \mathrm{ELBO} + D_{\mathrm{KL}}(q_{\phi}(\mathbf{z}\|\mathbf{x}) \|\| p_\theta(\mathbf{z}|\mathbf{x}))\\ = \mathbb{E}_{q_{\phi}(\mathbf{z}|\mathbf{x})}\left[\log \frac{p_\theta(\mathbf{x}, \mathbf{z})}{q_{\phi}(\mathbf{z}|\mathbf{x})}\right] + D_{\mathrm{KL}}(q_{\phi}(\mathbf{z}|\mathbf{x}) || p_\theta(\mathbf{z}|\mathbf{x}))
+p_\theta(\mathbf{x}) = \mathrm{ELBO} + D_{\mathrm{KL}}(q_{\phi}(\mathbf{z}\vert\mathbf{x}) \vert\vert p_\theta(\mathbf{z}|\mathbf{x}))\\ = \mathbb{E}_{q_{\phi}(\mathbf{z}|\mathbf{x})}\left[\log \frac{p_\theta(\mathbf{x}, \mathbf{z})}{q_{\phi}(\mathbf{z}|\mathbf{x})}\right] + D_{\mathrm{KL}}(q_{\phi}(\mathbf{z}|\mathbf{x}) || p_\theta(\mathbf{z}|\mathbf{x}))
 $$
 
 The ELBO can be further written as
@@ -131,7 +131,7 @@ $$
 p_\theta(\mathbf{x}) = \mathbb{E}_{q_{\phi}(\mathbf{z}|\mathbf{x})}\left[\log p_\theta(\mathbf{x}| \mathbf{z})\right] - D_{\mathrm{KL}}[q_\phi(\mathbf{z}|\mathbf{x})|| p(\mathbf{z})] + D_{\mathrm{KL}}[q_{\phi}(\mathbf{z}|\mathbf{x}) || p_\theta(\mathbf{z}|\mathbf{x})] \\ \geq \underbrace{\mathbb{E}_{q_{\phi}(\mathbf{z}|\mathbf{x})}\left[\log p_\theta(\mathbf{x}| \mathbf{z})\right]}_{\mathrm{reconstruction\ term}} - \underbrace{D_{\mathrm{KL}}[q_\phi(\mathbf{z}|\mathbf{x})|| p(\mathbf{z})]}_{\mathrm{prior\ matching\ term}} = \mathrm{ELBO}
 $$
 
-Computing $D_{\mathrm{KL}}[q_{\phi}(\mathbf{z}\|\mathbf{x}) \|\| p_\theta(\mathbf{z}\|\mathbf{x})]$  is intractable, since it involves the conditional probability distributions, but we know it is non-negative, therefore we only need to evaluate the ELBO, which further consists of two terms: the **reconstruction term** and the **prior matching term**. 
+Computing $D_{\mathrm{KL}}[q_{\phi}(\mathbf{z}\vert\mathbf{x}) \vert\vert p_\theta(\mathbf{z}\vert\mathbf{x})]$  is intractable, since it involves the conditional probability distributions, but we know it is non-negative, therefore we only need to evaluate the ELBO, which further consists of two terms: the **reconstruction term** and the **prior matching term**. 
 
 In order to maximize the ELBO, we want to maximize the **reconstruction term** and minimize the **prior matching term**. 
 
@@ -141,7 +141,7 @@ $$
 
 ### The prior matching term
 
-Let’s look at the second term, minimizing the KL divergence of $q_\phi(\mathbf{z}\|\mathbf{x})$   and $p(\mathbf{z})$ means to make them as similar as possible. $p(\mathbf{z})$ is a prior distribution of the latent variables that we choose in advance. It is easy to see that the choice of $p(\mathbf{z})$ does not constrain the expressions of $p(\mathbf{x})$, so theoretically we can choose any $p(\mathbf{z})$. However, we choose $p(\mathbf{z})$ to be a **standard multivariate Gaussian** 
+Let’s look at the second term, minimizing the KL divergence of $q_\phi(\mathbf{z}\vert\mathbf{x})$   and $p(\mathbf{z})$ means to make them as similar as possible. $p(\mathbf{z})$ is a prior distribution of the latent variables that we choose in advance. It is easy to see that the choice of $p(\mathbf{z})$ does not constrain the expressions of $p(\mathbf{x})$, so theoretically we can choose any $p(\mathbf{z})$. However, we choose $p(\mathbf{z})$ to be a **standard multivariate Gaussian** 
 
 $$
 p(\mathbf{z}) = \mathcal{N}(\mathbf{z}; \mathbf{0}, \mathbf{I})
@@ -155,13 +155,13 @@ $$
 
 where $\mathbf{\mu}$ is the mean of $\mathbf{z}$, and $\mathbf{\Sigma}$ is the $n\times n$ covariance matrix: $\Sigma_{ij} = \mathbb{E}[(z_i-\mu_i)(z_j - \mu_j)]$.
 
-Then the encoder $q_\phi(\mathbf{z}\|\mathbf{x})$ is commonly chosen to be a multivariant Gaussian with diagonal variance
+Then the encoder $q_\phi(\mathbf{z}\vert\mathbf{x})$ is commonly chosen to be a multivariant Gaussian with diagonal variance
 
 $$
 q_\phi(\mathbf{z}|\mathbf{x}) = \mathcal{N}(\mathbf{z}; \mathbf{\mu}_{\phi}(\mathbf{x}), \mathbf{\sigma}^2_\phi(\mathbf{x})\mathbf{I})
 $$
 
-Then the KL divergence $D_{\mathrm{KL}}[q_\phi(\mathbf{z}\|\mathbf{x})\|\| p(\mathbf{z})]$ can be computed analytically.
+Then the KL divergence $D_{\mathrm{KL}}[q_\phi(\mathbf{z}\vert\mathbf{x})\vert\vert p(\mathbf{z})]$ can be computed analytically.
 
 ### The reconstruction term
 
@@ -171,9 +171,9 @@ $$
 \mathbb{E}_{q_{\phi}(\mathbf{z}|\mathbf{x})}\left[\log p_\theta(\mathbf{x}| \mathbf{z})\right] \approx \sum_{l=1}^L \log p_\theta(\mathbf{x}| {z}^{(l)})
 $$
 
-where the latents $z^{(l)}_{l=1}^L$ are sampled from  $q_\phi(\mathbf{z}\|\mathbf{x})$ for *every* ${x}$ in the dataset. 
+where the latents $z^{(l)}_{l=1}^L$ are sampled from  $q_\phi(\mathbf{z}\vert\mathbf{x})$ for *every* ${x}$ in the dataset. 
 
-If we directly generate a layer of $\mathbf{z}$ values from $q_\phi(\mathbf{z}\|\mathbf{x})$, then since $\{z^{(l)}\}_{l=1}^L$ are generated stochastically, the gradient with respect to $\phi$ cannot be evaluated easily. This can be resolved by **reparameterization**. The idea is to move the stochastic node out of the network, as follows (lecture slide from MIT).
+If we directly generate a layer of $\mathbf{z}$ values from $q_\phi(\mathbf{z}\vert\mathbf{x})$, then since $\{z^{(l)}\}_{l=1}^L$ are generated stochastically, the gradient with respect to $\phi$ cannot be evaluated easily. This can be resolved by **reparameterization**. The idea is to move the stochastic node out of the network, as follows (lecture slide from MIT).
 
 <img src="figures/20230821/reparam.png" alt="Reparametrization" width="300"/>
 
@@ -255,11 +255,11 @@ $$
 
 where only $p(\mathbf{x}_T)$ has a fixed expression.
 
-Since $q(\mathbf{x} \| \mathbf{x}_{t-1})$ is pre-chosen, we only need to learn the backward conditions $p_{\theta}(\mathbf{x}_{t-1} \| \mathbf{x}_t)$, i.e., the parameters $\theta$.
+Since $q(\mathbf{x} \vert \mathbf{x}_{t-1})$ is pre-chosen, we only need to learn the backward conditions $p_{\theta}(\mathbf{x}_{t-1} \vert \mathbf{x}_t)$, i.e., the parameters $\theta$.
 
 ### Generating new data
 
-Once $p_{\theta}(\mathbf{x}_{t-1} \| \mathbf{x}_t)$ are learned, one can start from a standard Gaussian, and iteratively run the denoising transitions $p_{\theta}(\mathbf{x}_{t-1} \| \mathbf{x}_t)$ for $T$ steps to generate new data $\mathbf{x}_0$.
+Once $p_{\theta}(\mathbf{x}_{t-1} \vert \mathbf{x}_t)$ are learned, one can start from a standard Gaussian, and iteratively run the denoising transitions $p_{\theta}(\mathbf{x}_{t-1} \vert \mathbf{x}_t)$ for $T$ steps to generate new data $\mathbf{x}_0$.
 
 ### ELBO
 
@@ -272,8 +272,8 @@ $$
 
 The three terms correspond to
 
-- The reconstruction term $\mathbb{E}_{q(\mathbf{x}_1 \| \mathbf{x}_0)}[\log p_{\theta}(\mathbf{x}_0\|\mathbf{x}_1)]$ can be approximated and optimized using Monte Carlo.
+- The reconstruction term $\mathbb{E}_{q(\mathbf{x}_1 \vert \mathbf{x}_0)}[\log p_{\theta}(\mathbf{x}_0\vert\mathbf{x}_1)]$ can be approximated and optimized using Monte Carlo.
 
-- The prior matching term $D_{\text{KL}}(q(\mathbf{x}_T \| \mathbf{x}_0) \|\|  p(\mathbf{x}_T))$ is how close the final distribution to a standard Gaussian, and has no trainable parameters, so we can take is as a constant, say zero, and ignore it.
+- The prior matching term $D_{\text{KL}}(q(\mathbf{x}_T \vert \mathbf{x}_0) \vert\vert  p(\mathbf{x}_T))$ is how close the final distribution to a standard Gaussian, and has no trainable parameters, so we can take is as a constant, say zero, and ignore it.
 
-- The denoising matching term $\sum_{t=2}^T \mathbb{E}_{q(\mathbf{x}_t \| \mathbf{x}_0)}[D_{\text{KL}}(q(\mathbf{x}_{t-1} \| \mathbf{x}_t,\mathbf{x}_0)) \|\| p_{\theta}(\mathbf{x}_{t-1} \| \mathbf{x}_t)]$ , going in the reverse time direction. The ground truth denoising transition step is $q(\mathbf{x}_{t-1} \| \mathbf{x}_t, \mathbf{x}_0)$, and we train the parameters $\theta$ to learn $p_{\theta}(\mathbf{x}_{t-1} \| \mathbf{x}_t)$.
+- The denoising matching term $\sum_{t=2}^T \mathbb{E}_{q(\mathbf{x}_t \vert \mathbf{x}_0)}[D_{\text{KL}}(q(\mathbf{x}_{t-1} \vert \mathbf{x}_t,\mathbf{x}_0)) \vert\vert p_{\theta}(\mathbf{x}_{t-1} \vert \mathbf{x}_t)]$ , going in the reverse time direction. The ground truth denoising transition step is $q(\mathbf{x}_{t-1} \vert \mathbf{x}_t, \mathbf{x}_0)$, and we train the parameters $\theta$ to learn $p_{\theta}(\mathbf{x}_{t-1} \vert \mathbf{x}_t)$.
