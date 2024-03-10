@@ -19,11 +19,11 @@ A full publication list can be found on my <a href="https://scholar.google.com/c
 This paper provides a new vision on the behavior of entanglement at finite temperature. It also provides a numerical algorithm called finite-temperature density matrix embedding theory (FT-DMET), which is powerful for computing observables and phase diagrams for strongly correlated systems at finite temperature.
 
   <img
-  src="../images/publications/FT-DMET.png"
+  src="../images/publications/prb2020/FT-DMET.png"
   alt="FT-DMET Algorithm"
   style="width:30%">&nbsp;&nbsp;&nbsp;&nbsp;
   <img
-  src="../images/publications/2D_Hubbard.png"
+  src="../images/publications/prb2020/2D_Hubbard.png"
   alt="ft 2d hubbard"
   style="width:30%">
 
