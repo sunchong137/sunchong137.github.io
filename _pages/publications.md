@@ -24,11 +24,9 @@ This work used realistic lattice parameters derived from density functional theo
   src="../images/publications/pccp2015/lattice.png"
   style="width:20%"
   >
-  <figcaption> [Fe(pz)Pt(CN)4]·2H2O Lattice Geometry from DFT Simulation</figcaption>
-</figure>
-<figure>
+  <!-- <figcaption> [Fe(pz)Pt(CN)4]·2H2O Lattice Geometry from DFT Simulation</figcaption> -->
   <img
   src="../images/publications/pccp2015/sab_model.png"
   style="width:20%">
-  <figcaption>String and Ball model</figcaption>
+  <!-- <figcaption>String and Ball model</figcaption> -->
 </figure>
