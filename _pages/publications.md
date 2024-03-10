@@ -6,11 +6,11 @@ author_profile: false
 ---
 A full publication list can be found on my <a href="https://scholar.google.com/citations?user=KETTV4YAAAAJ&hl=en">Google Scholar</a>.
 
-{% include base_path %}
+<!-- {% include base_path %}
 
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
-{% endfor %}
+{% endfor %} -->
 
 ### [Finite-temperature density matrix embedding theory](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.075131)
 
