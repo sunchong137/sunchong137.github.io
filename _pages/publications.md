@@ -21,7 +21,7 @@ This paper provides a new vision on the behavior of entanglement at finite tempe
   <img
   src="../images/publications/prb2020/FT-DMET.png"
   alt="FT-DMET Algorithm"
-  style="width:30%">&nbsp;&nbsp;&nbsp;&nbsp;
+  style="width:50%">&nbsp;&nbsp;&nbsp;&nbsp;
   <img
   src="../images/publications/prb2020/2D_Hubbard.png"
   alt="ft 2d hubbard"
