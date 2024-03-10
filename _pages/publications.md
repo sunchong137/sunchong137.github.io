@@ -24,7 +24,7 @@ This work used realistic lattice parameters derived from density functional theo
   <img
   src="../images/publications/pccp2015/lattice.png"
   style="width:30%">
-  <br><br><br>
+  <br>
   <img
   src="../images/publications/pccp2015/sab_model.png"
   style="width:30%">
