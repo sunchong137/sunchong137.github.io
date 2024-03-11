@@ -65,15 +65,14 @@ Zhi-Hao Cui, **Chong Sun**, et. al. Phys. Rev. Research 2, 043259(2020)
 
 Three-band Hubbard model is a good model-approximation to the two-dimensional cuprate layer, which is the key structure of copper-based high-temperature superconductors. This paper applied density matrix embedding theory (DMET) to simulating the magnetic order and pairing parameters of the three-band Hubbard model with dopping, and shed light on understanding the mechanism of high Tc superconductors. 
 
-<figure>
   <img
   src="../images/publications/prr2020/three_band.png"
   alt="three band"
-  style="width:25%">&nbsp;&nbsp;&nbsp;&nbsp;
+  style="width:30%">&nbsp;&nbsp;&nbsp;&nbsp;
   <img
   src="../images/publications/prr2020/three_band_simulations.png"
   alt="three band simulations"
-  style="width:25%">
+  style="width:30%">
 
 ### Monte-Carlo simulations of spin-crossover phenomena based on a vibronic Ising-like model with realistic parameters ([Link](https://pubs.rsc.org/en/content/articlelanding/2015/cp/c4cp05562d/unauth))
 
@@ -89,6 +88,6 @@ This work used realistic lattice parameters derived from density functional theo
   style="width:25%">&nbsp;&nbsp;&nbsp;&nbsp;
   <img
   src="../images/publications/pccp2015/sab_model.png"
-  style="width:25%">
+  style="width:30%">
   <!-- <figcaption>String and Ball model</figcaption> -->
 <!-- </figure> -->
