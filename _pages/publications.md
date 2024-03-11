@@ -11,6 +11,20 @@ A full publication list can be found on my <a href="https://scholar.google.com/c
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %} -->
+### Selected non-orthogonal configuration interaction with compressed single and double excitations ([Arxiv](https://arxiv.org/abs/2403.02350))
+
+**Chong Sun**, Fei Gao and Gustavo E. Scuseria, arXiv:2403.02350 [physics.chem-ph]
+
+We derived elegant formulae to compress a linear combination of orthogonal particle-hole excitations into a much shorter non-orthogonal configuration interaction (NOCI). We further combine this strategy to add dynamic correlation to an NOCI reference, providing a systematically improvable approach to add arbitrary rank of excitations to a multi-reference wavefunction.
+
+<img
+src="../images/publications/snocisd2024/compress_ndet.png"
+alt="Spread of entanglement"
+style="width:25%">&nbsp;&nbsp;&nbsp;&nbsp;
+<img
+src="../images/publications/snocisd2024/n2_diss.png"
+alt="simulation"
+style="width:25%">
 
 
 ### Determining eigenstates and thermal states on a quantum computer using quantum imaginary time evolution ([Link](https://www.nature.com/articles/s41567-019-0704-4))
