@@ -12,6 +12,7 @@ A full publication list can be found on my <a href="https://scholar.google.com/c
   {% include archive-single.html %}
 {% endfor %} -->
 
+
 ### Determining eigenstates and thermal states on a quantum computer using quantum imaginary time evolution ([Link](https://www.nature.com/articles/s41567-019-0704-4))
 
 Mario Motta, **Chong Sun**, et. al., Nat. Phys. 16, 205–210 (2020).
@@ -42,6 +43,23 @@ This paper provides a new vision on the behavior of entanglement at finite tempe
   src="../images/publications/prb2020/2D_Hubbard.png"
   alt="ft 2d hubbard"
   style="width:30%">
+
+
+### Ground-state phase diagram of the three-band Hubbard model from density matrix embedding theory ([Link](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.043259))
+
+Zhi-Hao Cui, **Chong Sun**, et. al. Phys. Rev. Research 2, 043259(2020)
+
+Three-band Hubbard model is a good model-approximation to the two-dimensional cuprate layer, which is the key structure of copper-based high-temperature superconductors. This paper applied density matrix embedding theory (DMET) to simulating the magnetic order and pairing parameters of the three-band Hubbard model with dopping, and shed light on understanding the mechanism of high Tc superconductors. 
+
+<figure>
+  <img
+  src="../images/publications/prr2020/three_band.png"
+  alt="three band"
+  style="width:25%">&nbsp;&nbsp;&nbsp;&nbsp;
+  <img
+  src="../images/publications/prr2020/three_band_simulations.png"
+  alt="three band simulations"
+  style="width:25%">
 
 ### Monte-Carlo simulations of spin-crossover phenomena based on a vibronic Ising-like model with realistic parameters ([Link](https://pubs.rsc.org/en/content/articlelanding/2015/cp/c4cp05562d/unauth))
 
