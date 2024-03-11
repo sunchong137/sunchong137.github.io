@@ -12,7 +12,23 @@ A full publication list can be found on my <a href="https://scholar.google.com/c
   {% include archive-single.html %}
 {% endfor %} -->
 
-### [Finite-temperature density matrix embedding theory](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.075131)
+### Determining eigenstates and thermal states on a quantum computer using quantum imaginary time evolution ([Link](https://www.nature.com/articles/s41567-019-0704-4))
+
+Mario Motta, **Chong Sun**, et. al., Nat. Phys. 16, 205–210 (2020).
+
+This work provides a quantum algorithm for imaginary time evolution (ITE). The biggest
+challenge of implementing ITE on a quantum computer is that the ITE operator is non-unitary. Unlike the popular block encoding approach, our algorithm does not require ancillary qubits. The key is to utilize the entanglement pattern of a physical system. 
+
+  <img
+  src="../images/publications/natphys2020/qite.png"
+  alt="Spread of entanglement"
+  style="width:25%">&nbsp;&nbsp;&nbsp;&nbsp;
+  <img
+  src="../images/publications/natphys2020/qite_simulations.png"
+  alt="simulation"
+  style="width:25%">
+
+### Finite-temperature density matrix embedding theory ([Link](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.075131))
 
 **Chong Sun**, Ushnish Ray, Zhi-Hao Cui, Miles Stoudenmire, Michel Ferrero, and Garnet Kin-Lic Chan. Phys. Rev. B 101, 075131 (2020)
 
@@ -27,7 +43,7 @@ This paper provides a new vision on the behavior of entanglement at finite tempe
   alt="ft 2d hubbard"
   style="width:30%">
 
-### [Monte-Carlo simulations of spin-crossover phenomena based on a vibronic Ising-like model with realistic parameters](https://pubs.rsc.org/en/content/articlelanding/2015/cp/c4cp05562d/unauth)
+### Monte-Carlo simulations of spin-crossover phenomena based on a vibronic Ising-like model with realistic parameters ([Link](https://pubs.rsc.org/en/content/articlelanding/2015/cp/c4cp05562d/unauth))
 
 Hong-Zhou Ye, **Chong Sun** and Hong Jiang (*equal contribution*), Phys. Chem. Chem. Phys.,17, 6801-6808 (2015)
 
@@ -38,9 +54,9 @@ This work used realistic lattice parameters derived from density functional theo
 <!-- <figure> -->
   <img
   src="../images/publications/pccp2015/lattice.png"
-  style="width:30%">&nbsp;&nbsp;&nbsp;&nbsp;
+  style="width:25%">&nbsp;&nbsp;&nbsp;&nbsp;
   <img
   src="../images/publications/pccp2015/sab_model.png"
-  style="width:30%">
+  style="width:25%">
   <!-- <figcaption>String and Ball model</figcaption> -->
 <!-- </figure> -->
