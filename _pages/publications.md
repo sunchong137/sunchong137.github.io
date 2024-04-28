@@ -11,9 +11,20 @@ A full publication list can be found on my <a href="https://scholar.google.com/c
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %} -->
-### Selected non-orthogonal configuration interaction with compressed single and double excitations ([Arxiv](https://arxiv.org/abs/2403.02350))
+### Electron localization in disordered quantum systems at finite temperatures ([Arxiv](https://arxiv.org/abs/2403.16868))
 
-**Chong Sun**, Fei Gao and Gustavo E. Scuseria, arXiv:2403.02350 [physics.chem-ph]
+Chong Sun, arXiv:2403.16868 [cond-mat.dis-nn]
+
+We study electron localization in disordered quantum systems, focusing on both individual eigenstates and thermal states. We employ complex polarization as a numerical indicator to characterize the system's localization length. Furthermore, we assess the efficacy of mean-field approximation in providing a quantitative analysis of such systems. 
+
+<img
+src="../images/publications/mbl2024/compol_fig.png"
+alt="simulation"
+style="width:25%">
+
+### Selected non-orthogonal configuration interaction with compressed single and double excitations ([Link](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.4c00240))
+
+**Chong Sun**, Fei Gao and Gustavo E. Scuseria, J. Chem. Theory Comput. 2024.
 
 We derived elegant formulae to compress a linear combination of orthogonal particle-hole excitations into a much shorter non-orthogonal configuration interaction (NOCI). We further combine this strategy to add dynamic correlation to an NOCI reference, providing a systematically improvable approach to add arbitrary rank of excitations to a multi-reference wavefunction.
 

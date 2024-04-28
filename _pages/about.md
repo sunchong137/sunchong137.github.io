@@ -13,7 +13,7 @@ chemist.
 I am currently a visiting researcher at Microsoft Research and a postdoctoral fellow at Rice
 University with [Prof. Gustavo Scuseria](http://scuseria.rice.edu/).
 I earned my Ph.D. in Chemistry and Chemical Engineering from the California Institute of Technology in 2021, advised by [Prof. Garnet Kin-Lic Chan](https://www.chan-lab.caltech.edu/) focusing on developing numerical methods for strongly correlated systems.
-My dissertation is on [Finite-Temperature Simulations of Strongly Correlationed Systems](https://arxiv.org/abs/2302.14313). I worked as a postdoctoral researcher with [Prof. Alan Aspuru-Guzik](https://www.matter.toronto.edu/) on interdisciplinary research for electronic structures.
+My dissertation is on [Finite-Temperature Simulations of Strongly Correlationed Systems](https://arxiv.org/abs/2302.14313). I worked as a postdoctoral researcher with [Prof. Alan Aspuru-Guzik](https://www.matter.toronto.edu/) on interdisciplinary research  for electronic structures.
 <!-- title   -->
 ## Research Interest
 
