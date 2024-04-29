@@ -18,7 +18,11 @@ Chong Sun, arXiv:2403.16868 [cond-mat.dis-nn]
 We study electron localization in disordered quantum systems, focusing on both individual eigenstates and thermal states. We employ complex polarization as a numerical indicator to characterize the system's localization length. Furthermore, we assess the efficacy of mean-field approximation in providing a quantitative analysis of such systems. 
 
 <img
-src="../images/publications/mbl2024/compol_fig.png"
+src="../images/publications/mbl2024/compol_fig1.png"
+alt="Spread of entanglement"
+style="width:50%">&nbsp;&nbsp;&nbsp;&nbsp;
+<img
+src="../images/publications/mbl2024/compol_fig2.png"
 alt="simulation"
 style="width:40%">
 
