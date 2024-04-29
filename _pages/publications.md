@@ -20,7 +20,7 @@ We study electron localization in disordered quantum systems, focusing on both i
 <img
 src="../images/publications/mbl2024/compol_fig.png"
 alt="simulation"
-style="width:25%">
+style="width:40%">
 
 ### Selected non-orthogonal configuration interaction with compressed single and double excitations ([Link](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.4c00240))
 
