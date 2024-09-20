@@ -21,4 +21,4 @@ My goal as a scientist is to expand our knowledge of the microscopic world (mole
 a quantum-chemistry background, where I developed my physical and chemical intuition in approaching problems, and received rigorous training in mathematical analysis, numerical methods and coding. Later I was exposed to quantum computing (QC) and deep learning (DL), two rising fields that we can benefit from. Having knowledge in QC and DL not only expanded my tool
 boxes, but also made me re-examine my role as a computational scientist. 
 
-My short term goal is to incorporate the current tools we have to describe molecules and materials with high presicion, and to predict new physics. My ultimate dream is to build a simulatable world.
+My short term goal is to incorporate the current tools we have to describe molecules and materials with high precision, and to predict new physics. My ultimate dream is to build a simulatable world.
