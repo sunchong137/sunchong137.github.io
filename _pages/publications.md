@@ -64,11 +64,11 @@ challenge of implementing ITE on a quantum computer is that the ITE operator is 
   <img
   src="../images/publications/natphys2020/qite.png"
   alt="Spread of entanglement"
-  style="width:25%">&nbsp;&nbsp;&nbsp;&nbsp;
+  style="width:35%">&nbsp;&nbsp;&nbsp;&nbsp;
   <img
   src="../images/publications/natphys2020/qite_simulations.png"
   alt="simulation"
-  style="width:25%">
+  style="width:35%">
 
 ### Finite-temperature density matrix embedding theory ([Link](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.075131))
 
