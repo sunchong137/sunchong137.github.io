@@ -12,7 +12,7 @@ A full publication list can be found on my <a href="https://scholar.google.com/c
   {% include archive-single.html %}
 {% endfor %} -->
 
-### Waveflow: boundary-conditioned normalizing flows applied to fermionic wavefunctions([Arxiv](https://arxiv.org/abs/2211.14839))
+### Waveflow: boundary-conditioned normalizing flows applied to fermionic wavefunctions ([Arxiv](https://arxiv.org/abs/2211.14839))
 
 Luca Thiede, **Chong Sun** (Co-first Author), Alan Aspuru-Guzik
 
