@@ -14,7 +14,7 @@ A full publication list can be found on my <a href="https://scholar.google.com/c
 
 ### Waveflow: boundary-conditioned normalizing flows applied to fermionic wavefunctions([Arxiv](https://arxiv.org/abs/2211.14839))
 
-Luca Thiede, Chong Sun (Co-first Author), Alan Aspuru-Guzik
+Luca Thiede, **Chong Sun** (Co-first Author), Alan Aspuru-Guzik
 
  In this work, we introduce Waveflow, an innovative framework for learning many-body fermionic wavefunctions using boundary-conditioned normalizing flows. Instead of relying on Slater determinants, Waveflow imposes antisymmetry by defining the fundamental domain of the wavefunction and applying necessary boundary conditions.
 
@@ -25,7 +25,7 @@ style="width:40%">
 
 ### Electron localization in disordered quantum systems at finite temperatures ([Arxiv](https://arxiv.org/abs/2403.16868))
 
-Chong Sun, arXiv:2403.16868 [cond-mat.dis-nn]
+**Chong Sun**, arXiv:2403.16868 [cond-mat.dis-nn]
 
 We study electron localization in disordered quantum systems, focusing on both individual eigenstates and thermal states. We employ complex polarization as a numerical indicator to characterize the system's localization length. Furthermore, we assess the efficacy of mean-field approximation in providing a quantitative analysis of such systems. 
 
@@ -103,7 +103,7 @@ Three-band Hubbard model is a good model-approximation to the two-dimensional cu
 
 ### Monte-Carlo simulations of spin-crossover phenomena based on a vibronic Ising-like model with realistic parameters ([Link](https://pubs.rsc.org/en/content/articlelanding/2015/cp/c4cp05562d/unauth))
 
-Hong-Zhou Ye, **Chong Sun** and Hong Jiang (*equal contribution*), Phys. Chem. Chem. Phys.,17, 6801-6808 (2015)
+Hong-Zhou Ye, **Chong Sun** (Co-first Author) and Hong Jiang, Phys. Chem. Chem. Phys.,17, 6801-6808 (2015)
 
 <!-- Citation: <a href="../_publications/bibtexs/pccp2015.md"> bibtex style</a> -->
 
