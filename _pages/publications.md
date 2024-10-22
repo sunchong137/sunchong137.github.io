@@ -11,6 +11,18 @@ A full publication list can be found on my <a href="https://scholar.google.com/c
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %} -->
+
+### Waveflow: boundary-conditioned normalizing flows applied to fermionic wavefunctions([Arxiv](https://arxiv.org/abs/2211.14839))
+
+Luca Thiede, Chong Sun (Co-first Author), Alan Aspuru-Guzik
+
+ In this work, we introduce Waveflow, an innovative framework for learning many-body fermionic wavefunctions using boundary-conditioned normalizing flows. Instead of relying on Slater determinants, Waveflow imposes antisymmetry by defining the fundamental domain of the wavefunction and applying necessary boundary conditions.
+
+ <img
+src="../images/publications/waveflow2024/waveflow_toc.png"
+alt="waveflow"
+style="width:40%">
+
 ### Electron localization in disordered quantum systems at finite temperatures ([Arxiv](https://arxiv.org/abs/2403.16868))
 
 Chong Sun, arXiv:2403.16868 [cond-mat.dis-nn]
