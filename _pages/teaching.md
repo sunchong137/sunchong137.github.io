@@ -32,9 +32,9 @@ The role of a teacher is to transmit knowledge, impart skills, and dispel doubts
 
  - *Caltech*, 2016-2017 Fall 
 
-### Quantum Chemistry (graduate level)
+<!-- ### Quantum Chemistry (graduate level)
 
- - *Peking University*, 2014-2015 Spring
+ - *Peking University*, 2014-2015 Spring -->
 
 
 ## Mentees
