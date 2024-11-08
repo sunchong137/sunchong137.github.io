@@ -32,12 +32,17 @@ style="width:25%">
 
 L. Thiede, **C. Sun** (Co-first Author, Corresponding Author), A. Aspuru-Guzik. *APL Mach. Learn.* 2, 046106 (2024)
 
- In this work, we introduced Waveflow, an innovative framework for learning many-body fermionic wavefunctions using boundary-conditioned normalizing flows. Instead of relying on Slater determinants, Waveflow imposes antisymmetry by defining the fundamental domain of the wavefunction and applying necessary boundary conditions.
+<div style="display: flex; align-items: center;">
+  <img src="../images/publications/waveflow2024/waveflow_toc.png" alt="Description" style="width: 200px; margin-right: 20px;">
+  <p> In this work, we introduced Waveflow, an innovative framework for learning many-body fermionic wavefunctions using boundary-conditioned normalizing flows. Instead of relying on Slater determinants, Waveflow imposes antisymmetry by defining the fundamental domain of the wavefunction and applying necessary boundary conditions.</p>
+</div>
+
+ <!-- In this work, we introduced Waveflow, an innovative framework for learning many-body fermionic wavefunctions using boundary-conditioned normalizing flows. Instead of relying on Slater determinants, Waveflow imposes antisymmetry by defining the fundamental domain of the wavefunction and applying necessary boundary conditions.
  <img
 src="../images/publications/waveflow2024/waveflow_toc.png"
 alt="waveflow"
 style="float: right;"
-style="width:40%">
+style="width:40%"> -->
 
 ### Electron localization in disordered quantum systems at finite temperatures ([Arxiv](https://arxiv.org/abs/2403.16868))
 
