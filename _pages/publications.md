@@ -12,15 +12,32 @@ A full publication list can be found on my <a href="https://scholar.google.com/c
   {% include archive-single.html %}
 {% endfor %} -->
 
-### Waveflow: boundary-conditioned normalizing flows applied to fermionic wavefunctions ([Arxiv](https://arxiv.org/abs/2211.14839))
+### Selected non-orthogonal configuration interaction with compressed single and double excitations ([Link](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.4c00240))
 
-Luca Thiede, **Chong Sun** (Co-first Author), Alan Aspuru-Guzik
+**Chong Sun**, Fei Gao and Gustavo E. Scuseria, J. Chem. Theory Comput. 2024.
 
- In this work, we introduce Waveflow, an innovative framework for learning many-body fermionic wavefunctions using boundary-conditioned normalizing flows. Instead of relying on Slater determinants, Waveflow imposes antisymmetry by defining the fundamental domain of the wavefunction and applying necessary boundary conditions.
+We derived elegant formulae to compress a linear combination of orthogonal particle-hole excitations into a much shorter non-orthogonal configuration interaction (NOCI). We further combine this strategy to add dynamic correlation to an NOCI reference, providing a systematically improvable approach to add arbitrary rank of excitations to a multi-reference wavefunction.
+
+<img
+src="../images/publications/snocisd2024/compress_ndet.png"
+alt="Spread of entanglement"
+style="width:25%">&nbsp;&nbsp;&nbsp;&nbsp;
+<img
+src="../images/publications/snocisd2024/n2_diss.png"
+alt="simulation"
+style="width:25%">
+
+
+### Waveflow: boundary-conditioned normalizing flows applied to fermionic wavefunctions ([Link](https://pubs.aip.org/aip/aml/article/2/4/046106/3319478/Waveflow-Boundary-conditioned-normalizing-flows9))
+
+Luca Thiede, **Chong Sun** (Co-first Author, Corresponding Author), Alan Aspuru-Guzik. APL Mach. Learn. 2, 046106 (2024)
+
+ In this work, we introduced Waveflow, an innovative framework for learning many-body fermionic wavefunctions using boundary-conditioned normalizing flows. Instead of relying on Slater determinants, Waveflow imposes antisymmetry by defining the fundamental domain of the wavefunction and applying necessary boundary conditions.
 
  <img
 src="../images/publications/waveflow2024/waveflow_toc.png"
 alt="waveflow"
+style="float: right;"
 style="width:40%">
 
 ### Electron localization in disordered quantum systems at finite temperatures ([Arxiv](https://arxiv.org/abs/2403.16868))
@@ -38,20 +55,6 @@ src="../images/publications/mbl2024/compol_fig2.png"
 alt="simulation"
 style="width:40%">
 
-### Selected non-orthogonal configuration interaction with compressed single and double excitations ([Link](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.4c00240))
-
-**Chong Sun**, Fei Gao and Gustavo E. Scuseria, J. Chem. Theory Comput. 2024.
-
-We derived elegant formulae to compress a linear combination of orthogonal particle-hole excitations into a much shorter non-orthogonal configuration interaction (NOCI). We further combine this strategy to add dynamic correlation to an NOCI reference, providing a systematically improvable approach to add arbitrary rank of excitations to a multi-reference wavefunction.
-
-<img
-src="../images/publications/snocisd2024/compress_ndet.png"
-alt="Spread of entanglement"
-style="width:25%">&nbsp;&nbsp;&nbsp;&nbsp;
-<img
-src="../images/publications/snocisd2024/n2_diss.png"
-alt="simulation"
-style="width:25%">
 
 
 ### Determining eigenstates and thermal states on a quantum computer using quantum imaginary time evolution ([Link](https://www.nature.com/articles/s41567-019-0704-4))
