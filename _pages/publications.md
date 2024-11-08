@@ -14,18 +14,13 @@ A full publication list can be found on my <a href="https://scholar.google.com/c
 
 ### Selected non-orthogonal configuration interaction with compressed single and double excitations ([Link](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.4c00240))
 
-**Chong Sun**, Fei Gao and Gustavo E. Scuseria, J. Chem. Theory Comput. 2024.
+**C. Sun**, F. Gao and G. E. Scuseria. *J. Chem. Theory Comput.* 20, 9, 3741–3748 (2024)
 
-We derived elegant formulae to compress a linear combination of orthogonal particle-hole excitations into a much shorter non-orthogonal configuration interaction (NOCI). We further combine this strategy to add dynamic correlation to an NOCI reference, providing a systematically improvable approach to add arbitrary rank of excitations to a multi-reference wavefunction.
+<div style="display: flex; align-items: center;">
+  <img src="../images/publications/snocisd2024/nocisd_toc.png" alt="Description" style="width: 300px; margin-right: 20px;">
+  <p> We derived elegant formulae to compress a linear combination of orthogonal particle-hole excitations into a much shorter non-orthogonal configuration interaction (NOCI). We further combine this strategy to add dynamic correlation to an NOCI reference, providing a systematically improvable approach to add arbitrary rank of excitations to a multi-reference wavefunction. </p>
+</div>
 
-<img
-src="../images/publications/snocisd2024/compress_ndet.png"
-alt="Spread of entanglement"
-style="width:25%">&nbsp;&nbsp;&nbsp;&nbsp;
-<img
-src="../images/publications/snocisd2024/n2_diss.png"
-alt="simulation"
-style="width:25%">
 
 
 ### Waveflow: boundary-conditioned normalizing flows applied to fermionic wavefunctions ([Link](https://pubs.aip.org/aip/aml/article/2/4/046106/3319478/Waveflow-Boundary-conditioned-normalizing-flows9))
@@ -33,20 +28,15 @@ style="width:25%">
 L. Thiede, **C. Sun** (Co-first Author, Corresponding Author), A. Aspuru-Guzik. *APL Mach. Learn.* 2, 046106 (2024)
 
 <div style="display: flex; align-items: center;">
-  <img src="../images/publications/waveflow2024/waveflow_toc.png" alt="Description" style="width: 200px; margin-right: 20px;">
-  <p> In this work, we introduced Waveflow, an innovative framework for learning many-body fermionic wavefunctions using boundary-conditioned normalizing flows. Instead of relying on Slater determinants, Waveflow imposes antisymmetry by defining the fundamental domain of the wavefunction and applying necessary boundary conditions.</p>
+  <img src="../images/publications/waveflow2024/waveflow_toc.png" alt="Description" style="width: 300px; margin-right: 20px;">
+  <p> We introduced Waveflow, an innovative framework for learning many-body fermionic wavefunctions with boundary-conditioned normalizing flows. Rather than relying on Slater determinants, Waveflow achieves antisymmetry by defining the wavefunction's fundamental domain and enforcing the appropriate boundary conditions. Furthermore, we introduced a method for relaxing both the prior distribution and the flow, enabling us to overcome the longstanding topological mismatch problem in normalizing flows. </p>
 </div>
 
- <!-- In this work, we introduced Waveflow, an innovative framework for learning many-body fermionic wavefunctions using boundary-conditioned normalizing flows. Instead of relying on Slater determinants, Waveflow imposes antisymmetry by defining the fundamental domain of the wavefunction and applying necessary boundary conditions.
- <img
-src="../images/publications/waveflow2024/waveflow_toc.png"
-alt="waveflow"
-style="float: right;"
-style="width:40%"> -->
+
 
 ### Electron localization in disordered quantum systems at finite temperatures ([Arxiv](https://arxiv.org/abs/2403.16868))
 
-**Chong Sun**, arXiv:2403.16868 [cond-mat.dis-nn]
+**C. Sun**, arXiv:2403.16868 [cond-mat.dis-nn]
 
 We study electron localization in disordered quantum systems, focusing on both individual eigenstates and thermal states. We employ complex polarization as a numerical indicator to characterize the system's localization length. Furthermore, we assess the efficacy of mean-field approximation in providing a quantitative analysis of such systems. 
 
@@ -63,7 +53,7 @@ style="width:40%">
 
 ### Determining eigenstates and thermal states on a quantum computer using quantum imaginary time evolution ([Link](https://www.nature.com/articles/s41567-019-0704-4))
 
-Mario Motta, **Chong Sun**, et. al., Nat. Phys. 16, 205–210 (2020).
+Mario Motta, **C. Sun**, et. al., Nat. Phys. 16, 205–210 (2020).
 
 This work provides a quantum algorithm for imaginary time evolution (ITE). The biggest
 challenge of implementing ITE on a quantum computer is that the ITE operator is non-unitary. Unlike the popular block encoding approach, our algorithm does not require ancillary qubits. The key is to utilize the entanglement pattern of a physical system. 
