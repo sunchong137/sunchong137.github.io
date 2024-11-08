@@ -30,10 +30,9 @@ style="width:25%">
 
 ### Waveflow: boundary-conditioned normalizing flows applied to fermionic wavefunctions ([Link](https://pubs.aip.org/aip/aml/article/2/4/046106/3319478/Waveflow-Boundary-conditioned-normalizing-flows9))
 
-Luca Thiede, **Chong Sun** (Co-first Author, Corresponding Author), Alan Aspuru-Guzik. APL Mach. Learn. 2, 046106 (2024)
+L. Thiede, **C. Sun** (Co-first Author, Corresponding Author), A. Aspuru-Guzik. *APL Mach. Learn.* 2, 046106 (2024)
 
  In this work, we introduced Waveflow, an innovative framework for learning many-body fermionic wavefunctions using boundary-conditioned normalizing flows. Instead of relying on Slater determinants, Waveflow imposes antisymmetry by defining the fundamental domain of the wavefunction and applying necessary boundary conditions.
-
  <img
 src="../images/publications/waveflow2024/waveflow_toc.png"
 alt="waveflow"
