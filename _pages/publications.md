@@ -14,10 +14,10 @@ A full publication list can be found on my <a href="https://scholar.google.com/c
 
 ### Selected non-orthogonal configuration interaction with compressed single and double excitations ([Link](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.4c00240))
 
-**C. Sun**, F. Gao and G. E. Scuseria. *J. Chem. Theory Comput.* 20, 9, 3741–3748 (2024)
+**C. Sun**, F. Gao and G. E. Scuseria. *J. Chem. Theory Comput.* 20, 9, 3741–3748 (2024).
 
 <div style="display: flex; align-items: center;">
-  <img src="../images/publications/snocisd2024/nocisd_toc.png" alt="Description" style="width: 300px; margin-right: 20px;">
+  <img src="../images/publications/snocisd2024/nocisd_toc.png" alt="Description" style="width: 200px; margin-right: 20px;">
   <p> We derived elegant formulae to compress a linear combination of orthogonal particle-hole excitations into a much shorter non-orthogonal configuration interaction (NOCI). We further combine this strategy to add dynamic correlation to an NOCI reference, providing a systematically improvable approach to add arbitrary rank of excitations to a multi-reference wavefunction. </p>
 </div>
 
@@ -25,10 +25,11 @@ A full publication list can be found on my <a href="https://scholar.google.com/c
 
 ### Waveflow: boundary-conditioned normalizing flows applied to fermionic wavefunctions ([Link](https://pubs.aip.org/aip/aml/article/2/4/046106/3319478/Waveflow-Boundary-conditioned-normalizing-flows9))
 
-L. Thiede, **C. Sun** (Co-first Author, Corresponding Author), A. Aspuru-Guzik. *APL Mach. Learn.* 2, 046106 (2024)
+L. Thiede, **C. Sun** (Co-first Author, Corresponding Author), A. Aspuru-Guzik. *APL Mach. Learn.* 2, 046106 (2024).
+**Featured Article**
 
 <div style="display: flex; align-items: center;">
-  <img src="../images/publications/waveflow2024/waveflow_toc.png" alt="Description" style="width: 300px; margin-right: 20px;">
+  <img src="../images/publications/waveflow2024/waveflow_toc.png" alt="Description" style="width: 250px; margin-right: 20px;">
   <p> We introduced Waveflow, an innovative framework for learning many-body fermionic wavefunctions with boundary-conditioned normalizing flows. Rather than relying on Slater determinants, Waveflow achieves antisymmetry by defining the wavefunction's fundamental domain and enforcing the appropriate boundary conditions. Furthermore, we introduced a method for relaxing both the prior distribution and the flow, enabling us to overcome the longstanding topological mismatch problem in normalizing flows. </p>
 </div>
 
@@ -38,24 +39,25 @@ L. Thiede, **C. Sun** (Co-first Author, Corresponding Author), A. Aspuru-Guzik. 
 
 **C. Sun**, arXiv:2403.16868 [cond-mat.dis-nn]
 
-We study electron localization in disordered quantum systems, focusing on both individual eigenstates and thermal states. We employ complex polarization as a numerical indicator to characterize the system's localization length. Furthermore, we assess the efficacy of mean-field approximation in providing a quantitative analysis of such systems. 
+<div style="display: flex; align-items: center;">
+  <img src="../images/publications/mbl2024/compol_fig2.png" alt="Description" style="width: 200px; margin-right: 20px;">
+  <p> Disordered quantum systems exhibiting many-body localization (MBL) hold promise as noise-resilient materials for quantum computing. In this work, we investigate electron localization within disordered quantum systems, examining both individual eigenstates and thermal states. We use complex polarization as a numerical indicator to characterize the system's localization length. Additionally, we evaluate the effectiveness of the mean-field approximation in delivering a quantitative analysis of these systems. </p>
+</div>
 
-<img
-src="../images/publications/mbl2024/compol_fig1.png"
-alt="Spread of entanglement"
-style="width:50%">&nbsp;&nbsp;&nbsp;&nbsp;
-<img
-src="../images/publications/mbl2024/compol_fig2.png"
-alt="simulation"
-style="width:40%">
 
 
 
 ### Determining eigenstates and thermal states on a quantum computer using quantum imaginary time evolution ([Link](https://www.nature.com/articles/s41567-019-0704-4))
 
-Mario Motta, **C. Sun**, et. al., Nat. Phys. 16, 205–210 (2020).
+M. Motta, **C. Sun**,  A. T. K. Tan, M. J. O’Rourke, E. Ye, A. J. Minnich, F. G. S. L. Brandão and G. K.-L. Chan. *Nat. Phys.* 16, 205–210 (2020).
 
-This work provides a quantum algorithm for imaginary time evolution (ITE). The biggest
+<div style="display: flex; align-items: center;">
+  <img src="../images/publications/natphys2020/qite.png" alt="Description" style="width: 200px; margin-right: 20px;">
+  <p> This work provides a quantum algorithm for imaginary time evolution (ITE). The biggest
+challenge of implementing ITE on a quantum computer is that the ITE operator is non-unitary. Unlike the popular block encoding approach, our algorithm does not require ancillary qubits. The key is to utilize the entanglement pattern of a physical system.  </p>
+</div>
+
+<!-- This work provides a quantum algorithm for imaginary time evolution (ITE). The biggest
 challenge of implementing ITE on a quantum computer is that the ITE operator is non-unitary. Unlike the popular block encoding approach, our algorithm does not require ancillary qubits. The key is to utilize the entanglement pattern of a physical system. 
 
   <img
@@ -65,11 +67,11 @@ challenge of implementing ITE on a quantum computer is that the ITE operator is 
   <img
   src="../images/publications/natphys2020/qite_simulations.png"
   alt="simulation"
-  style="width:35%">
+  style="width:35%"> -->
 
 ### Finite-temperature density matrix embedding theory ([Link](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.075131))
 
-**Chong Sun**, Ushnish Ray, Zhi-Hao Cui, Miles Stoudenmire, Michel Ferrero, and Garnet Kin-Lic Chan. Phys. Rev. B 101, 075131 (2020)
+**C. Sun** (Corresponding Author), U. Ray, Z.-H. Cui, M. Stoudenmire, M. Ferrero, and G. K.-L. Chan. Phys. Rev. B 101, 075131 (2020)
 
 This paper provides a new vision on the behavior of entanglement at finite temperature. It also provides a numerical algorithm called finite-temperature density matrix embedding theory (FT-DMET), which is powerful for computing observables and phase diagrams for strongly correlated systems at finite temperature.
 
