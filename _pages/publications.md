@@ -40,7 +40,7 @@ L. Thiede, **C. Sun** (Co-first Author, Corresponding Author), A. Aspuru-Guzik. 
 **C. Sun**, arXiv:2403.16868 [cond-mat.dis-nn]
 
 <div style="display: flex; align-items: center;">
-  <img src="../images/publications/mbl2024/compol_fig2.png" alt="Description" style="width: 200px; margin-right: 20px;">
+  <img src="../images/publications/mbl2024/compol_fig2.png" alt="Description" style="width: 250px; margin-right: 20px;">
   <p> Disordered quantum systems exhibiting many-body localization (MBL) hold promise as noise-resilient materials for quantum computing. In this work, we investigate electron localization within disordered quantum systems, examining both individual eigenstates and thermal states. We use complex polarization as a numerical indicator to characterize the system's localization length. Additionally, we evaluate the effectiveness of the mean-field approximation in delivering a quantitative analysis of these systems. </p>
 </div>
 
@@ -57,63 +57,33 @@ M. Motta, **C. Sun**,  A. T. K. Tan, M. J. O’Rourke, E. Ye, A. J. Minnich, F. 
 challenge of implementing ITE on a quantum computer is that the ITE operator is non-unitary. Unlike the popular block encoding approach, our algorithm does not require ancillary qubits. The key is to utilize the entanglement pattern of a physical system.  </p>
 </div>
 
-<!-- This work provides a quantum algorithm for imaginary time evolution (ITE). The biggest
-challenge of implementing ITE on a quantum computer is that the ITE operator is non-unitary. Unlike the popular block encoding approach, our algorithm does not require ancillary qubits. The key is to utilize the entanglement pattern of a physical system. 
-
-  <img
-  src="../images/publications/natphys2020/qite.png"
-  alt="Spread of entanglement"
-  style="width:35%">&nbsp;&nbsp;&nbsp;&nbsp;
-  <img
-  src="../images/publications/natphys2020/qite_simulations.png"
-  alt="simulation"
-  style="width:35%"> -->
 
 ### Finite-temperature density matrix embedding theory ([Link](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.075131))
 
-**C. Sun** (Corresponding Author), U. Ray, Z.-H. Cui, M. Stoudenmire, M. Ferrero, and G. K.-L. Chan. Phys. Rev. B 101, 075131 (2020)
+**C. Sun** (Corresponding Author), U. Ray, Z.-H. Cui, M. Stoudenmire, M. Ferrero, and G. K.-L. Chan. *Phys. Rev. B* 101, 075131 (2020).
 
-This paper provides a new vision on the behavior of entanglement at finite temperature. It also provides a numerical algorithm called finite-temperature density matrix embedding theory (FT-DMET), which is powerful for computing observables and phase diagrams for strongly correlated systems at finite temperature.
-
-  <img
-  src="../images/publications/prb2020/FT-DMET.png"
-  alt="FT-DMET Algorithm"
-  style="width:50%">&nbsp;&nbsp;&nbsp;&nbsp;
-  <img
-  src="../images/publications/prb2020/2D_Hubbard.png"
-  alt="ft 2d hubbard"
-  style="width:30%">
+<div style="display: flex; align-items: center;">
+  <img src="../images/publications/prb2020/2D_Hubbard.png" alt="Description" style="width: 200px; margin-right: 20px;">
+  <p> This paper provides a new vision on the behavior of entanglement at finite temperature. It also provides a numerical algorithm called finite-temperature density matrix embedding theory (FT-DMET), which is powerful for computing observables and phase diagrams for strongly correlated systems at finite temperature. </p>
+</div>
 
 
 ### Ground-state phase diagram of the three-band Hubbard model from density matrix embedding theory ([Link](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.043259))
 
-Zhi-Hao Cui, **Chong Sun**, et. al. Phys. Rev. Research 2, 043259(2020)
+Z.-H. Cui, **C. Sun**, U. Ray, B.-X. Zheng, Q. Sun, and G. K.-L. Chan. *Phys. Rev. Research* 2, 043259 (2020).
 
-Three-band Hubbard model is a good model-approximation to the two-dimensional cuprate layer, which is the key structure of copper-based high-temperature superconductors. This paper applied density matrix embedding theory (DMET) to simulating the magnetic order and pairing parameters of the three-band Hubbard model with dopping, and shed light on understanding the mechanism of high Tc superconductors. 
+<div style="display: flex; align-items: center;">
+  <img src="../images/publications/prr2020/three_band_simulations.png" alt="Description" style="width: 200px; margin-right: 20px;">
+  <p> Three-band Hubbard model is a good model-approximation to the two-dimensional cuprate layer, which is the key structure of copper-based high-temperature superconductors. This paper applied density matrix embedding theory (DMET) to simulating the magnetic order and pairing parameters of the three-band Hubbard model with dopping, and shed light on understanding the mechanism of high Tc superconductors.  </p>
+</div>
 
-  <img
-  src="../images/publications/prr2020/three_band.png"
-  alt="three band"
-  style="width:30%">&nbsp;&nbsp;&nbsp;&nbsp;
-  <img
-  src="../images/publications/prr2020/three_band_simulations.png"
-  alt="three band simulations"
-  style="width:30%">
 
 ### Monte-Carlo simulations of spin-crossover phenomena based on a vibronic Ising-like model with realistic parameters ([Link](https://pubs.rsc.org/en/content/articlelanding/2015/cp/c4cp05562d/unauth))
 
-Hong-Zhou Ye, **Chong Sun** (Co-first Author) and Hong Jiang, Phys. Chem. Chem. Phys.,17, 6801-6808 (2015)
+H.-Z. Ye, **C. Sun** (Co-first Author) and H. Jiang. *Phys. Chem. Chem. Phys.* 17, 6801-6808 (2015).
 
-<!-- Citation: <a href="../_publications/bibtexs/pccp2015.md"> bibtex style</a> -->
-
-This work used realistic lattice parameters derived from density functional theory (DFT) simulations to study the spin crossover (SCO) behavior of the [Fe(pz)Pt(CN)4]·2H2O lattice. We simplified the complex lattice with an Ising-like model with elastic coupling between SCO centers. We profiled the thermal hysteresis of this SCO systems with Monte Carlo simulation. 
-
-<!-- <figure> -->
-  <img
-  src="../images/publications/pccp2015/lattice.png"
-  style="width:20%">&nbsp;&nbsp;&nbsp;&nbsp;
-  <img
-  src="../images/publications/pccp2015/sab_model.png"
-  style="width:25%">
-  <!-- <figcaption>String and Ball model</figcaption> -->
-<!-- </figure> -->
+<div style="display: flex; align-items: center;">
+  <img src="../images/publications/pccp2015/sab_model.png" alt="Description" style="width: 200px; margin-right: 20px;">
+  <p> This work used realistic lattice parameters derived from density functional theory (DFT) simulations to study the spin crossover (SCO) behavior of the [Fe(pz)Pt(CN)4]·2H2O lattice. We simplified the complex lattice with an Ising-like model with elastic coupling between SCO centers. We profiled the thermal hysteresis of this SCO systems with Monte Carlo simulation. 
+  </p>
+</div>
