@@ -40,7 +40,7 @@ L. Thiede, **C. Sun** (Co-first Author, Corresponding Author), A. Aspuru-Guzik. 
 **C. Sun**, arXiv:2403.16868 [cond-mat.dis-nn]
 
 <div style="display: flex; align-items: center;">
-  <img src="../images/publications/mbl2024/compol_fig2.png" alt="Description" style="width: 250px; margin-right: 20px;">
+  <img src="../images/publications/mbl2024/compol_fig2.png" alt="Description" style="width: 280px; margin-right: 20px;">
   <p> Disordered quantum systems exhibiting many-body localization (MBL) hold promise as noise-resilient materials for quantum computing. In this work, we investigate electron localization within disordered quantum systems, examining both individual eigenstates and thermal states. We use complex polarization as a numerical indicator to characterize the system's localization length. Additionally, we evaluate the effectiveness of the mean-field approximation in delivering a quantitative analysis of these systems. </p>
 </div>
 
@@ -63,7 +63,7 @@ challenge of implementing ITE on a quantum computer is that the ITE operator is 
 **C. Sun** (Corresponding Author), U. Ray, Z.-H. Cui, M. Stoudenmire, M. Ferrero, and G. K.-L. Chan. *Phys. Rev. B* 101, 075131 (2020).
 
 <div style="display: flex; align-items: center;">
-  <img src="../images/publications/prb2020/2D_Hubbard.png" alt="Description" style="width: 200px; margin-right: 20px;">
+  <img src="../images/publications/prb2020/2D_Hubbard.png" alt="Description" style="width: 250px; margin-right: 20px;">
   <p> This paper provides a new vision on the behavior of entanglement at finite temperature. It also provides a numerical algorithm called finite-temperature density matrix embedding theory (FT-DMET), which is powerful for computing observables and phase diagrams for strongly correlated systems at finite temperature. </p>
 </div>
 
@@ -73,7 +73,7 @@ challenge of implementing ITE on a quantum computer is that the ITE operator is 
 Z.-H. Cui, **C. Sun**, U. Ray, B.-X. Zheng, Q. Sun, and G. K.-L. Chan. *Phys. Rev. Research* 2, 043259 (2020).
 
 <div style="display: flex; align-items: center;">
-  <img src="../images/publications/prr2020/three_band_simulations.png" alt="Description" style="width: 200px; margin-right: 20px;">
+  <img src="../images/publications/prr2020/three_band_simulations.png" alt="Description" style="width: 250px; margin-right: 20px;">
   <p> Three-band Hubbard model is a good model-approximation to the two-dimensional cuprate layer, which is the key structure of copper-based high-temperature superconductors. This paper applied density matrix embedding theory (DMET) to simulating the magnetic order and pairing parameters of the three-band Hubbard model with dopping, and shed light on understanding the mechanism of high Tc superconductors.  </p>
 </div>
 
