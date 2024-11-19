@@ -26,6 +26,7 @@ My long-term goal is to build a computational ecosystem illustrated below.
 I will focus on identifying and designing the best numerical tools for various chemical systems, and incorporate generative models to support *de novo* design of functional molecules and materials. 
 In particular, I will push the discovery of renewable energy and quantum materials, which in turn will support the hardware development. With this **spiraling growth**, I anticipate a stable computational ecosystem in the near future.
 
+<div style="display: flex; align-items: center;">
   <img src="../images/ecosystem.png" alt="toc" style="width: 500px; center">
-
+</div>
 
