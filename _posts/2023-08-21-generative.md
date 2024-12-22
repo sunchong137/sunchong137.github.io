@@ -8,7 +8,7 @@ tags:
   - Machine Learning
   - Generative models
 ---
-This post gives a general introduction of popular generative models such as variational autoencoder (VAE) and diffusion models (DM).
+This post gives a general introduction of popular generative models such as variational autoencoder (VAE), autoregressive models, generative adversarial networks (GANs), and diffusion models.
 
 1. [Introduction](#introduction)
 2. [Variational Autoencoder (VAE)](#variational-autoencoder-(VAE))
@@ -22,12 +22,19 @@ The **application** can be generating new samples from the approximated distribu
 
 Some popular generative models are summarized in the following table and the basic structures are shown in the figure following it.
 
-| Class | Examples | Note |
-| --- | --- | --- |
-| Generative Adversarial Networks (GANs) |  | learned in an adversarial manner, difficult to train. |
-| Likelihood-based models  | [Autoregressive models](https://arxiv.org/abs/1908.09257), Variational Autoencoders (VAEs) | optimization |
-| Energy-based models |  | optimization |
-| Score-based models | [Paper](https://arxiv.org/pdf/2208.11970.pdf) | optimization |
+| Category | Examples | Note | Applications | 
+| --- | --- | --- | --- |
+|GANs  |StyleGAN, CycleGAN  | learned in an adversarial manner, difficult to train | Realistic image synthesis |
+|[Autoregressive](https://arxiv.org/abs/1908.09257) | GPT |Likelihood-based models | Text, audio, sequential data|
+|VAEs| Conditional VAE |Likelihood-based models | Representation learning | 
+|Diffusion Models| | | High-quality image/audio|
+|Normalizing Flows| Glow | distribution transformation | density estimation, sampling|
+
+<!-- | Likelihood-based models  | [Autoregressive models](https://arxiv.org/abs/1908.09257), Variational Autoencoders (VAEs) | optimization | -->
+<!-- | Energy-based models |  | optimization |
+| Score-based models | [Paper](https://arxiv.org/pdf/2208.11970.pdf) | optimization | -->
+
+
 
 <figure>
   <img
