@@ -7,4 +7,4 @@ redirect_from:
   - /resume
 ---
 
-The latest CV can be downloaded <a href="../files/CSun_CV2024.pdf">here</a>.
+The latest CV can be downloaded <a href="../files/Sun-CV-2025.pdf">here</a>.
