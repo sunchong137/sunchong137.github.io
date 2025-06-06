@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About me"
+title: "Welcome to my website!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -10,12 +10,12 @@ redirect_from:
 
 Hi, my name is Chong Sun [孙 (Sun1) 冲 (Chong1) in Chinese], a theoretical and computational
 chemist. 
-<!-- I will be joining the [Department of Chemistry and Chemical Biology](https://chem.rutgers.edu/) at Rutgers-New Brunswick as an assistant professor starting Fall 2025.
- -->
-Currently, I am a research scientist at Microsoft Quantum and a postdoctoral fellow at Rice
+I will be joining the [Department of Chemistry and Chemical Biology](https://chem.rutgers.edu/) at Rutgers-New Brunswick as an assistant professor starting Fall 2025. The Sun Group is actively recruiting students and postdocs, please reach out to me via chong[dot]sun[at]rutgers[dot]edu.
+
+<!-- Currently, I am a research scientist at Microsoft Quantum and a postdoctoral fellow at Rice
 University with [Prof. Gustavo Scuseria](http://scuseria.rice.edu/).
 I earned my Ph.D. in Chemistry and Chemical Engineering from the California Institute of Technology in 2021, advised by [Prof. Garnet Kin-Lic Chan](https://www.chan-lab.caltech.edu/) focusing on developing numerical methods for strongly correlated systems.
-My dissertation is on [Finite-Temperature Simulations of Strongly Correlationed Systems](https://arxiv.org/abs/2302.14313). I worked as a postdoctoral researcher with [Prof. Alan Aspuru-Guzik](https://www.matter.toronto.edu/) on interdisciplinary research  for electronic structures.
+My dissertation is on [Finite-Temperature Simulations of Strongly Correlationed Systems](https://arxiv.org/abs/2302.14313). I worked as a postdoctoral researcher with [Prof. Alan Aspuru-Guzik](https://www.matter.toronto.edu/) on interdisciplinary research  for electronic structures. -->
 <!-- title   -->
 ## Research Interest
 
@@ -30,6 +30,6 @@ Later I was exposed to quantum computing (QC) and deep learning (DL), two rising
 boxes, but also made me re-examine my role as a computational scientist. 
 
 My long-term goal is to build a computational ecosystem illustrated below. 
-I will focus on identifying and designing the best numerical tools for various chemical systems, and incorporate generative models to support *de novo* design of functional molecules and materials. 
+I will focus on identifying and designing the best numerical tools for various chemical systems, and incorporate generative models to support *in silico* design of functional molecules and materials. 
 In particular, I will push the discovery of renewable energy and quantum materials, which in turn will support the hardware development. With this **spiraling growth**, I anticipate a stable computational ecosystem in the near future.
 
