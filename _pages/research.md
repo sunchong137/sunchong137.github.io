@@ -1,10 +1,10 @@
 ---
+layout: archive
 permalink: /research/
 title: "Sun Group Research Roadmap"
-modified: 2025-06-07
 ---
 
-## Research Interest
+
 
 <div style="display: flex; align-items: center;">
   <img src="../images/ecosystem.png" alt="toc" style="width: 500px; center">
