@@ -1,6 +1,7 @@
 ---
 layout: archive
 permalink: /research/
+author_profile: false
 title: "Sun Group Research Roadmap"
 ---
 
